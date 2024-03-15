@@ -7,17 +7,24 @@ import { motion } from "framer-motion";
 const DiscordCards = () => {
   return (
     <div className="flex flex-col items-center bg-salmon-1 rounded-md p-4">
-      <motion.ul className="flex flex-row items-center justify-between gap-2 w-full">
+      <p className="text-center text-lg py-4 text-gray-50">
+        What are we discussing this week?
+      </p>
+      <motion.ul className="flex items-center justify-between gap-2 w-full">
         {discordOptions.map((option, index) => (
           <motion.li key={index}>
-            <Card className="h-[16rem]">
+            <Card className="">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <span className="text-indigo-400">{option.icon}</span>
                   <span className="text-sm">{option.name}</span>
                 </CardTitle>
               </CardHeader>
-              <CardContent></CardContent>
+              <CardContent>
+                <div className="my-6"></div>
+                <div className="my-6"></div>
+                <div className="my-6"></div>
+              </CardContent>
             </Card>
           </motion.li>
         ))}
