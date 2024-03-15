@@ -19,7 +19,7 @@ const Header = () => {
           quality={100}
         />
 
-        <p>
+        <p className="md:text-lg text-xs">
           Manju Muralidharan has a Master's Degree in Computer Science from
           Illinois Institute of Technology, Chicago and a Bachelors degree in
           Computer Engineering from Anna University, India, She started her
