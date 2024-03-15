@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SearchDialog from "./search/search-dialog";
+import { Suspense } from "react";
 
 const Footer = () => {
   return (
@@ -8,7 +9,9 @@ const Footer = () => {
         <Link className="hover:underline" href="/resources">
           Current Resources
         </Link>
-        <SearchDialog />
+        <Suspense>
+          <SearchDialog />
+        </Suspense>
       </footer>
     </div>
   );
