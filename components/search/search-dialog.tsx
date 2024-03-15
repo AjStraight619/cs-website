@@ -19,7 +19,7 @@ export type FilteredData = {
 
 const SearchDialog = () => {
   let searchData: FilteredData[] = [];
-  const { filteredData } = useFilteredData(searchData);
+  //   const { filteredData } = useFilteredData(searchData);
 
   return (
     <Dialog>
@@ -36,7 +36,7 @@ const SearchDialog = () => {
         <DialogHeader className="pt-4">
           <SearchBar />
         </DialogHeader>
-        {!filteredData.length ? (
+        {/* {!filteredData.length ? (
           <div className="text-center text-primary">Start typing to search</div>
         ) : (
           <ul className="flex flex-col">
@@ -57,7 +57,7 @@ const SearchDialog = () => {
               </li>
             ))}
           </ul>
-        )}
+        )} */}
       </DialogContent>
     </Dialog>
   );

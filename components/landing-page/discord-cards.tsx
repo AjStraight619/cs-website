@@ -3,11 +3,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 
 const DiscordCards = () => {
   return (
-    <div className="w-full flex items-center bg-salmon-1 rounded-md p-4">
+    <div className="flex flex-col flex-grow items-center bg-salmon-1 rounded-md p-4">
       <ul className="flex flex-row items-center justify-between gap-2 w-full">
         {discordOptions.map((option, index) => (
           <li key={index}>
-            <Card>
+            <Card className="h-[16rem]">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <span className="text-indigo-400">{option.icon}</span>
