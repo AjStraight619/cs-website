@@ -10,7 +10,7 @@ const DiscordCards = () => {
       <p className="text-center text-lg py-4 text-gray-50">
         What are we discussing this week?
       </p>
-      <motion.ul className="flex items-center justify-between gap-2 w-full">
+      <motion.ul className="flex md:flex-row flex-col items-center justify-between gap-2 w-full">
         {discordOptions.map((option, index) => (
           <motion.li key={index}>
             <Card className="">
@@ -21,8 +21,6 @@ const DiscordCards = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="my-6"></div>
-                <div className="my-6"></div>
                 <div className="my-6"></div>
               </CardContent>
             </Card>

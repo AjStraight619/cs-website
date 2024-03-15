@@ -8,7 +8,7 @@ const Header = () => {
       <CardHeader>
         <CardTitle></CardTitle>
       </CardHeader>
-      <CardContent className="flex flex-row items-center justify-between gap-4">
+      <CardContent className="flex md:flex-row flex-col items-center justify-between gap-4">
         <Image
           src="/headshot.svg"
           alt="headshot"
