@@ -11,17 +11,13 @@ import {
 } from "../ui/dialog";
 import SearchBar from "./search";
 
-type SearchDialogProps = {
-  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
-};
-
 export type FilteredData = {
   id: string;
   name: string;
   href: string;
 };
 
-const SearchDialog = ({ setIsMenuOpen }: SearchDialogProps) => {
+const SearchDialog = () => {
   let searchData: FilteredData[] = [];
   const { filteredData } = useFilteredData(searchData);
 
@@ -29,7 +25,7 @@ const SearchDialog = ({ setIsMenuOpen }: SearchDialogProps) => {
     <Dialog>
       <DialogTrigger asChild>
         <button
-          className=" mt-8 sm:mt-0 sm:w-10 p-2 relative inline-flex items-center border rounded-md text-primary/70 hover:text-primary z-[999] bg-stone-200"
+          className="mt-8 sm:mt-0 sm:w-10 p-2 relative inline-flex items-center border rounded-md text-primary/70 hover:text-primary z-[999] bg-stone-200"
           style={{ minWidth: "200px" }}
         >
           <Search className="absolute left-3 " />

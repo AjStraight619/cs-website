@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import ClassCards from "@/components/landing-page/class-cards";
 import DiscordCards from "@/components/landing-page/discord-cards";
 import Header from "@/components/landing-page/header";
