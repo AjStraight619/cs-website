@@ -52,6 +52,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <Nav />
+            <BackButton />
             {children}
           </ThemeProvider>
         </body>

@@ -6,7 +6,7 @@ export const IntroCards = () => {
   return (
     <section className="mb-24">
       <SectionDivider>Meet The Team</SectionDivider>
-      <div className="md:flex-row flex-col flex items-center justify-evenly gap-y-2 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {people.map((person, index) => (
           <IntroCard key={index} {...person} />
         ))}

@@ -16,7 +16,9 @@ export default async function TopicPage({ params }: TopicsPageProps) {
     process.env.GOOGLE_APPLICATION_CREDENTIALS!,
     "base64"
   ).toString("utf8");
+
   const credentialsJson = JSON.parse(decodedCredentials);
+
   const auth = new google.auth.GoogleAuth({
     credentials: credentialsJson,
     scopes: ["https://www.googleapis.com/auth/drive"],
@@ -44,10 +46,8 @@ export default async function TopicPage({ params }: TopicsPageProps) {
     return acc;
   }, {});
 
-  console.log(driveResponse.data.files);
   return (
     <main className="container flex flex-col">
-      {/* <pre>{JSON.stringify(groupByExtension, null, 2)}</pre> */}
       {groupByExtension?.pdf?.length > 0 && (
         <PdfDisplay pdfFiles={groupByExtension.pdf} />
       )}{" "}

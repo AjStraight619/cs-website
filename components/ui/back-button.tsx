@@ -12,7 +12,7 @@ const BackButton = () => {
   if (pathname === "/") return null;
   return (
     <Button
-      className="hover:opacity-100 opacity-55 hover:underline transition-all duration-150 fixed top-3 left-4"
+      className="hover:opacity-100 opacity-55 hover:underline transition-all duration-150 ml-4 md:fixed top-2 left-2 z-[999]"
       onClick={() => back()}
       variant={null}
       size="icon"
