@@ -66,16 +66,13 @@ export const Nav = () => {
       <nav className="fixed top-0 w-full h-16 border-b border-muted-foreground backdrop-blur-lg z-[999] font-poppins">
         <div className="md:container md:max-w-4xl flex items-center w-full h-full">
           <div className="flex items-center justify-between w-full">
-            {/* <div>
-            <BackButton />
-          </div> */}
             <div className="hidden sm:block">
               <ul className="flex items-center">
                 {navLinks.map((link, index) => (
                   <li key={index} className="space-x-2">
                     <Link
                       className={`ml-2 opacity-50 hover:opacity-100 ${
-                        pathname === link.href ? "underline" : ""
+                        pathname === link.href ? "underline opacity-100" : ""
                       }`}
                       key={index}
                       href={link.href}

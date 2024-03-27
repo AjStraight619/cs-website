@@ -42,7 +42,7 @@ export default function RootLayout({
         <head />
         <body
           className={cn(
-            `${poppins.variable} ${inter.className} min-h-screen bg-background antialiased mt-16`
+            `${poppins.variable} ${inter.className} min-h-screen bg-background antialiased mt-16 p-4`
           )}
         >
           <ThemeProvider
