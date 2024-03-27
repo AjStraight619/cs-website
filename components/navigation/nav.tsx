@@ -92,7 +92,7 @@ export const Nav = () => {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.nav
-            className="h-screen w-screen bg-background z-[50] fixed"
+            className="h-full w-screen bg-background z-[50] fixed"
             variants={navVariants}
             initial="hidden"
             animate="show"
