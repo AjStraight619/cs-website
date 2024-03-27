@@ -1,6 +1,5 @@
 import ClassCards from "@/components/landing-page/class-cards";
 import DiscordCards from "@/components/landing-page/discord-cards";
-import Header from "@/components/landing-page/header";
 import { IntroCards } from "@/components/landing-page/intro-cards";
 import Title from "@/components/landing-page/title";
 

@@ -5,32 +5,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { TopicsType } from "@/lib/types";
+import { liVariants, ulVariants } from "@/lib/data";
 
 export type TopicsProps = {
   topics: TopicsType[];
-};
-
-const ulVariants = {
-  hidden: {
-    opacity: 0,
-  },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-const liVariants = {
-  hidden: {
-    opacity: 0,
-    y: 20,
-  },
-  show: {
-    opacity: 1,
-    y: 0,
-  },
 };
 
 export const Topics = ({ topics }: TopicsProps) => {

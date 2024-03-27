@@ -86,3 +86,26 @@ export const cppTopicLinks = [
   },
   { id: "1EPJSfTaOROllsDtvrgN4WJCpw_mzTEtO", name: "Resources" },
 ];
+
+export const ulVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+export const liVariants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+  },
+};
