@@ -88,11 +88,11 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
-    future: {
-      hoverOnlyWhenSupported: true,
-    },
   },
   plugins: [require("tailwindcss-animate")],
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
 } satisfies Config;
 
 export default config;
