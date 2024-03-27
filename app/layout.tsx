@@ -18,6 +18,13 @@ export const metadata: Metadata = {
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["600"],
+  variable: "--font-poppins",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-inter",
 });
 
 export default function RootLayout({
@@ -35,7 +42,7 @@ export default function RootLayout({
         <head />
         <body
           className={cn(
-            `${poppins.className} min-h-screen bg-background antialiased`
+            `${poppins.variable} ${inter.className} min-h-screen bg-background antialiased mt-16`
           )}
         >
           <ThemeProvider

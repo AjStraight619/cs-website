@@ -3,13 +3,12 @@
 import { discordOptions } from "@/lib/data";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { motion } from "framer-motion";
+import { SectionDivider } from "./section-divider";
 
 const DiscordCards = () => {
   return (
-    <div className="flex flex-col items-center rounded-md p-4">
-      <p className="text-center text-lg py-4">
-        What are we discussing this week?
-      </p>
+    <div className="flex flex-col items-center rounded-md">
+      <SectionDivider>What are we discussing this week?</SectionDivider>
       <motion.ul className="flex md:flex-row flex-col items-center justify-between gap-2 w-full">
         {discordOptions.map((option, index) => (
           <motion.li key={index}>

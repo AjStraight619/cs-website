@@ -5,8 +5,8 @@ import Title from "@/components/landing-page/title";
 
 export default async function Home() {
   return (
-    <main className="flex flex-col items-center md:p-24 p-16">
-      <div className="w-full md:max-w-4xl space-y-12">
+    <main className="flex flex-col items-center md:p-24">
+      <div className="w-full md:max-w-4xl">
         <Title />
         <ClassCards />
         <IntroCards />

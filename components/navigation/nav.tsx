@@ -63,7 +63,7 @@ export const Nav = () => {
 
   return (
     <>
-      <nav className="fixed top-0 w-full h-16 border-b border-muted-foreground backdrop-blur-lg z-[999]">
+      <nav className="fixed top-0 w-full h-16 border-b border-muted-foreground backdrop-blur-lg z-[999] font-poppins">
         <div className="md:container md:max-w-4xl flex items-center w-full h-full">
           <div className="flex items-center justify-between w-full">
             {/* <div>
