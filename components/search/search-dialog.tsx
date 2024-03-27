@@ -25,7 +25,7 @@ const SearchDialog = () => {
     <Dialog>
       <DialogTrigger asChild>
         <button
-          className="mt-8 sm:mt-0 sm:w-10 p-2 relative inline-flex items-center border rounded-md text-primary/70 hover:text-primary z-[999] bg-stone-200"
+          className="mt-8 sm:mt-0 sm:w-10 p-2 relative inline-flex items-center border rounded-md text-primary/70 hover:text-primary z-[999]"
           style={{ minWidth: "200px" }}
         >
           <Search className="absolute left-3 " />

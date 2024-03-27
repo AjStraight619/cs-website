@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 const DiscordCards = () => {
   return (
-    <div className="flex flex-col items-center bg-salmon-1 rounded-md p-4">
-      <p className="text-center text-lg py-4 text-gray-50">
+    <div className="flex flex-col items-center rounded-md p-4">
+      <p className="text-center text-lg py-4">
         What are we discussing this week?
       </p>
       <motion.ul className="flex md:flex-row flex-col items-center justify-between gap-2 w-full">
@@ -16,7 +16,7 @@ const DiscordCards = () => {
             <Card className="">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <span className="text-indigo-400">{option.icon}</span>
+                  <span className="">{option.icon}</span>
                   <span className="text-sm">{option.name}</span>
                 </CardTitle>
               </CardHeader>

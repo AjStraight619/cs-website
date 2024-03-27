@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <Card className="bg-blueGreen-1 shadow-gray-300 shadow-sm">
+    <Card className=" shadow-sm">
       <CardHeader>
         <CardTitle></CardTitle>
       </CardHeader>
