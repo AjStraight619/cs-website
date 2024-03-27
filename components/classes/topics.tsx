@@ -15,8 +15,6 @@ export const Topics = ({ topics }: TopicsProps) => {
   const pathname = usePathname();
   return (
     <div className="flex flex-col items-start w-48">
-      <h1 className="font-semibold text-3xl">Topics</h1>
-      <Separator className="mb-8 mt-2" />
       <motion.ul
         initial="hidden"
         animate="show"
