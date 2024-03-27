@@ -46,6 +46,21 @@ export const Nav = () => {
     };
   }, [isMenuOpen]);
 
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 640) {
+        setIsMenuOpen(false);
+      }
+    });
+    return () => {
+      window.removeEventListener("resize", () => {
+        if (window.innerWidth > 640) {
+          setIsMenuOpen(false);
+        }
+      });
+    };
+  }, []);
+
   return (
     <>
       <nav className="fixed top-0 w-full h-16 border-b border-muted-foreground backdrop-blur-lg z-[999]">
