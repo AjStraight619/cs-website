@@ -38,7 +38,7 @@ export default function GradeCalculatorPage() {
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
-          <form className="space-y-2">
+          <form onSubmit={handleSubmit} className="space-y-2">
             <Label htmlFor="homework">Homework</Label>
             <Input
               onChange={(e) => handleChange(e)}
