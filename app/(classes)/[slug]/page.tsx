@@ -24,7 +24,9 @@ export default async function Page({ params }: PageProps) {
   return (
     <main className="min-h-screen">
       <Title>{title}</Title>
-      <h1 className="text-4xl font-bold mb-4">Topics</h1>
+      <h1 className="text-4xl font-roboto_condensed mb-4 text-discordText">
+        Topics
+      </h1>
       <Suspense
         fallback={
           <div className="flex flex-col space-y-8 w-full md:w-64">
