@@ -11,6 +11,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useState } from "react";
 
+type Grade = {};
+
 export default function GradeCalculatorPage() {
   const [values, setValues] = useState({
     homework: "",
@@ -18,7 +20,10 @@ export default function GradeCalculatorPage() {
     final: "",
   });
 
-  const handleChange = () => {};
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setValues({ ...values, [e.target.name]: e.target.value });
+    console.log(`${e.target.name}: ${e.target.value}`);
+  };
 
   const handleSubmit = () => {};
 
@@ -32,10 +37,26 @@ export default function GradeCalculatorPage() {
             the grade you want.
           </CardDescription>
         </CardHeader>
-        <CardContent>
-          <form className="space-y-6">
-            <Label htmlFor="currentGrade">Current Grade</Label>
-            <Input name="currentGrade" />
+        <CardContent className="space-y-6">
+          <form className="space-y-2">
+            <Label htmlFor="homework">Homework</Label>
+            <Input
+              onChange={(e) => handleChange(e)}
+              value={values.homework}
+              name="homework"
+            />
+            <Label htmlFor="midterm">Midterm</Label>
+            <Input
+              onChange={(e) => handleChange(e)}
+              value={values.midterm}
+              name="midterm"
+            />
+            <Label htmlFor="final">Final</Label>
+            <Input
+              onChange={(e) => handleChange(e)}
+              value={values.final}
+              name="final"
+            />
           </form>
         </CardContent>
       </Card>
