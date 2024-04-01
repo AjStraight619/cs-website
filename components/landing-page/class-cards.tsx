@@ -1,10 +1,10 @@
-"use client";
+'use client'
 
-import { classOptions } from "@/lib/data";
-import { motion } from "framer-motion";
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
+import { classOptions } from '@/lib/data'
+import { motion } from 'framer-motion'
+import { Card, CardContent, CardHeader, CardTitle } from '../ui/card'
+import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 const ClassCards = () => {
   return (
@@ -13,7 +13,7 @@ const ClassCards = () => {
         {classOptions.map((option, index) => (
           <motion.li className="w-full" key={index}>
             <Link href={option.href}>
-              <Card className="group transition-all cursor-pointer hover:scale-105 shadow-sm flex items-center justify-center pt-4 bg-discordPurple hover:bg-discordPurpleHover">
+              <Card className="group transition-all cursor-pointer hover:scale-105 shadow-sm flex items-center justify-center pt-4 bg-discordPurple hover:bg-discordPurpleHover text-discordText">
                 <CardContent className="flex gap-2 items-center justify-center">
                   {/* <span>{option.icon}</span> */}
                   <span className="font-semibold text-lg">{option.name}</span>
@@ -27,7 +27,7 @@ const ClassCards = () => {
         ))}
       </motion.ul>
     </section>
-  );
-};
+  )
+}
 
-export default ClassCards;
+export default ClassCards

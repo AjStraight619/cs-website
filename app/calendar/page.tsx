@@ -7,7 +7,6 @@ export default function CalendarPage() {
   return (
     <main className="flex flex-col items-center justify-center pt-20 h-full">
       <iframe
-        className={`${theme === 'dark' ? 'invert' : ''} `}
         src="https://calendar.google.com/calendar/embed?src=mmuralidharanpriya%40sdsu.edu&ctz=America%2FLos_Angeles"
         width="1000"
         height="800"

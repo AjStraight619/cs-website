@@ -1,35 +1,35 @@
-"use client";
-import { useFilteredData } from "@/hooks/useFilteredData";
+'use client'
+import { useFilteredData } from '@/hooks/useFilteredData'
 
-import { ExternalLink, Search } from "lucide-react";
-import Link from "next/link";
+import { ExternalLink, Search } from 'lucide-react'
+import Link from 'next/link'
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTrigger,
-} from "../ui/dialog";
-import SearchBar from "./search";
+} from '../ui/dialog'
+import SearchBar from './search'
 
 export type FilteredData = {
-  id: string;
-  name: string;
-  href: string;
-};
+  id: string
+  name: string
+  href: string
+}
 
 const SearchDialog = () => {
-  let searchData: FilteredData[] = [];
+  let searchData: FilteredData[] = []
   //   const { filteredData } = useFilteredData(searchData);
 
   return (
     <Dialog>
       <DialogTrigger asChild>
         <button
-          className="sm:mt-0 sm:w-10 p-2 relative  items-center border border-gray-50 rounded-md text-primary/70 hover:text-primary z-[999] inline-flex gap-2 transition-colors duration-150"
-          style={{ minWidth: "200px" }}
+          className="sm:mt-0 sm:w-10 p-2 relative  items-center border border-gray-50 rounded-md text-primary/70 hover:text-primary z-[999] inline-flex gap-2 transition-colors duration-150 text-gray-50"
+          style={{ minWidth: '200px' }}
         >
-          <Search className="absolute left-3 " />
-          <span className="ml-8 ">Search...</span>
+          <Search className="absolute left-3 text-gray-50 " />
+          <span className="ml-8 text-gray-50 ">Search...</span>
         </button>
       </DialogTrigger>
       <DialogContent>
@@ -60,7 +60,7 @@ const SearchDialog = () => {
         )} */}
       </DialogContent>
     </Dialog>
-  );
-};
+  )
+}
 
-export default SearchDialog;
+export default SearchDialog

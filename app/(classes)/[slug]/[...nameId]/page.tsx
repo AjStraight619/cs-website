@@ -1,4 +1,6 @@
 import CategoryFileDisplay from '@/components/classes/category-file-display'
+import ExternalLinks from '@/components/classes/external-links'
+import Title from '@/components/classes/title'
 import { Separator } from '@/components/ui/separator'
 import {
   CategorizedGoogleDriveFile,
@@ -9,11 +11,18 @@ import { google } from 'googleapis'
 
 export type TopicsPageProps = {
   params: {
-    id: string
+    nameId: string[]
   }
 }
 
 export default async function TopicPage({ params }: TopicsPageProps) {
+  // const [title, id] = params.slug
+
+  // console.log(title, id)
+
+  const [title, id] = params.nameId
+  console.log(title, id)
+
   const decodedCredentials = Buffer.from(
     process.env.GOOGLE_APPLICATION_CREDENTIALS!,
     'base64'
@@ -29,7 +38,7 @@ export default async function TopicPage({ params }: TopicsPageProps) {
   const drive = google.drive({ version: 'v3', auth })
 
   const driveResponse = await drive.files.list({
-    q: `'${params.id}' in parents`,
+    q: `'${id}' in parents`,
     pageSize: 10,
     fields: 'files(id, name, webViewLink, webContentLink)',
   })
@@ -90,11 +99,11 @@ export default async function TopicPage({ params }: TopicsPageProps) {
 
   return (
     <main className="flex flex-col gap-y-12">
-      {/* {documentFiles.length > 0 && <PdfDisplay files={documentFiles} />}
-      {videoFiles.length > 0 && <VideoDisplay files={videoFiles} />} */}
+      <Title>{decodeURIComponent(title).split('-').join(' ')}</Title>
+      <ExternalLinks />
       {sortedCategories.map((category, index) => (
         <>
-          {index !== 0 && <Separator className="h-[3px]" />}
+          <Separator className="h-[3px]" />
           <CategoryFileDisplay
             key={category}
             files={groupByExtension[category]}

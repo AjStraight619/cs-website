@@ -1,62 +1,62 @@
-"use client";
-import Link from "next/link";
-import SearchDialog from "../search/search-dialog";
-import { ModeToggle } from "../ui/theme-toggle";
-import { liVariants, navLinks, ulVariants } from "@/lib/data";
-import { usePathname } from "next/navigation";
-import { Button } from "../ui/button";
-import { useEffect, useState } from "react";
-import { MenuIcon } from "lucide-react";
-import { AnimatePresence, motion } from "framer-motion";
+'use client'
+import Link from 'next/link'
+import SearchDialog from '../search/search-dialog'
+import { ModeToggle } from '../ui/theme-toggle'
+import { liVariants, navLinks, ulVariants } from '@/lib/data'
+import { usePathname } from 'next/navigation'
+import { Button } from '../ui/button'
+import { useEffect, useState } from 'react'
+import { MenuIcon } from 'lucide-react'
+import { AnimatePresence, motion } from 'framer-motion'
 
 const navVariants = {
   hidden: {
-    y: "-100vh",
+    y: '-100vh',
     opacity: 0,
   },
   show: {
     y: 0,
     opacity: 1,
     transition: {
-      type: "spring",
+      type: 'spring',
       stiffness: 100,
       damping: 20,
     },
   },
   exit: {
-    y: "-100vh",
+    y: '-100vh',
     opacity: 0,
-    transition: { ease: "easeInOut", duration: 0.5 },
+    transition: { ease: 'easeInOut', duration: 0.5 },
   },
-};
+}
 
 export const Nav = () => {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
-    document.body.style.overflow = isMenuOpen ? "hidden" : "auto";
+    document.body.style.overflow = isMenuOpen ? 'hidden' : 'auto'
 
     return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [isMenuOpen]);
+      document.body.style.overflow = 'auto'
+    }
+  }, [isMenuOpen])
 
   useEffect(() => {
-    window.addEventListener("resize", () => {
+    window.addEventListener('resize', () => {
       if (window.innerWidth > 640) {
-        setIsMenuOpen(false);
+        setIsMenuOpen(false)
       }
-    });
+    })
     return () => {
-      window.removeEventListener("resize", () => {
+      window.removeEventListener('resize', () => {
         if (window.innerWidth > 640) {
-          setIsMenuOpen(false);
+          setIsMenuOpen(false)
         }
-      });
-    };
-  }, []);
+      })
+    }
+  }, [])
 
   return (
     <>
@@ -69,10 +69,10 @@ export const Nav = () => {
                   <li key={index} className="space-x-2">
                     <Link
                       href={link.href}
-                      className={`ml-6 font-sans text-primary-foreground ${
+                      className={`ml-6 font-sans text-gray-50 ${
                         pathname === link.href
-                          ? "underline opacity-100"
-                          : "opacity-50 hover:opacity-100"
+                          ? 'underline opacity-100'
+                          : 'opacity-50 hover:opacity-100'
                       }`}
                     >
                       {link.label}
@@ -126,5 +126,5 @@ export const Nav = () => {
         )}
       </AnimatePresence>
     </>
-  );
-};
+  )
+}

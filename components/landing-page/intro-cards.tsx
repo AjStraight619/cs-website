@@ -1,6 +1,6 @@
-import { people } from "@/lib/data";
-import { IntroCard } from "./intro-card";
-import { SectionDivider } from "./section-divider";
+import { people } from '@/lib/data'
+import { IntroCard } from './intro-card'
+import { SectionDivider } from './section-divider'
 
 export const IntroCards = () => {
   return (
@@ -12,5 +12,5 @@ export const IntroCards = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}

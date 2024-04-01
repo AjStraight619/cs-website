@@ -1,18 +1,23 @@
-import { Topics } from "@/components/classes/topics";
-import TopicsFetcher from "@/components/classes/topics-fetcher";
-import { Separator } from "@/components/ui/separator";
-import { Skeleton } from "@/components/ui/skeleton";
-import { TopicsType } from "@/lib/types";
-import { google } from "googleapis";
-import { Suspense } from "react";
+import { Topics } from '@/components/classes/topics'
+import TopicsFetcher from '@/components/classes/topics-fetcher'
+import { Separator } from '@/components/ui/separator'
+import { Skeleton } from '@/components/ui/skeleton'
+import { TopicsType } from '@/lib/types'
+import { google } from 'googleapis'
+import { Suspense } from 'react'
 
 type PageProps = {
   params: {
-    slug: string;
-  };
-};
+    slug: string
+  }
+}
 
 export default async function Page({ params }: PageProps) {
+  const folderId =
+    params.slug === 'cs210'
+      ? '1c6FZ7t5MUjFi8jiicgh1_mRd9XqkcZ8k'
+      : '149mtuEwIJry3mKvXFtN_djAzjnR96UsM'
+
   return (
     <main className="min-h-screen">
       <h1 className="text-4xl font-bold mb-4">Topics</h1>
@@ -25,8 +30,8 @@ export default async function Page({ params }: PageProps) {
           </div>
         }
       >
-        <TopicsFetcher />
+        <TopicsFetcher folderId={folderId} />
       </Suspense>
     </main>
-  );
+  )
 }
