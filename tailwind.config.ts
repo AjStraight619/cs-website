@@ -21,23 +21,28 @@ const config = {
     extend: {
       fontFamily: {
         poppins: ["var(--font-poppins)", ...fontFamily.sans],
+        inter: ["var(--font-inter)", ...fontFamily.sans],
+        roboto_condensed: ["var(--font-roboto-condensed)", ...fontFamily.sans],
       },
       colors: {
-        salmon: {
-          1: "#E8BDB3",
-        },
-        darkBlue: {
-          1: "#2C4F74",
-        },
-        bgMain: {
-          1: "#E5DFDF",
-        },
-        blueGreen: {
-          1: "#B2C5CB",
-        },
-        mustard: {
-          1: "#D8A846",
-        },
+        discordPurple: "#7289da", // Base color
+        discordPurpleHover: "#8aa2f0", // Hover color
+        // salmon: {
+        //   1: "#E8BDB3",
+        // },
+        // darkBlue: {
+        //   1: "#2C4F74",
+        // },
+        // bgMain: {
+        //   1: "#E5DFDF",
+        // },
+        // blueGreen: {
+        //   1: "#B2C5CB",
+        // },
+        // mustard: {
+        //   1: "#D8A846",
+        // },
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

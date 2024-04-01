@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Poppins, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/footer";
 import { ThemeProvider } from "@/providers/theme-provider";
-import { ModeToggle } from "@/components/ui/theme-toggle";
 import { Nav } from "@/components/navigation/nav";
-
-import { Poppins } from "next/font/google";
 import { cn } from "@/lib/utils";
 import BackButton from "@/components/ui/back-button";
 
@@ -27,6 +23,12 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const robot_condensed = Roboto_Condensed({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-inter",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -42,7 +44,7 @@ export default function RootLayout({
         <head />
         <body
           className={cn(
-            `${poppins.variable} ${inter.className} min-h-screen bg-background antialiased mt-16 p-4`
+            `${poppins.variable} ${inter.variable} ${robot_condensed.variable} flex flex-col min-h-screen bg-background antialiased`
           )}
         >
           <ThemeProvider

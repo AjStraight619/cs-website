@@ -1,5 +1,10 @@
-import PdfDisplay from "@/components/classes/pdf-display";
-import { GoogleDriveFile } from "@/lib/types";
+import CategoryFileDisplay from "@/components/classes/category-file-display";
+import { Separator } from "@/components/ui/separator";
+import {
+  CategorizedGoogleDriveFile,
+  FileGroup,
+  GoogleDriveFile,
+} from "@/lib/types";
 import { google } from "googleapis";
 
 export type TopicsPageProps = {
@@ -7,8 +12,6 @@ export type TopicsPageProps = {
     id: string;
   };
 };
-
-type FileGroup = Record<string, GoogleDriveFile[]>;
 
 export default async function TopicPage({ params }: TopicsPageProps) {
   console.log(params.id);
@@ -34,23 +37,74 @@ export default async function TopicPage({ params }: TopicsPageProps) {
 
   const files = driveResponse.data.files as GoogleDriveFile[];
 
-  const groupByExtension = files?.reduce((acc: FileGroup, file) => {
-    if (!file) return acc;
-    const extension = file?.name?.split(".")?.pop()?.toLowerCase() || "";
+  const categorizedFiles: (CategorizedGoogleDriveFile | null)[] = files
+    .map((file) => {
+      if (!file || !file.name) return null;
 
-    if (!acc[extension]) {
-      acc[extension] = [];
+      const parts = file.name.split(".");
+      const extension =
+        parts.length > 0 ? parts.pop()!.toLowerCase() : undefined;
+      let category = "";
+
+      if (["mkv", "mp4"].includes(extension!)) {
+        category = "Videos";
+      } else {
+        category = "Slides";
+      }
+
+      return { ...file, category } as CategorizedGoogleDriveFile;
+    })
+    .filter((file) => file !== null);
+
+  const groupByExtension: FileGroup = categorizedFiles.reduce(
+    (acc: FileGroup, file) => {
+      if (!file) return acc;
+
+      const { category = "unknown" } = file;
+
+      if (!acc[category]) {
+        acc[category] = [];
+      }
+
+      acc[category].push(file);
+      return acc;
+    },
+    {}
+  );
+
+  console.log("Grouped Files: ", groupByExtension);
+
+  const categoryOrder = ["Slides", "Videos"];
+
+  const sortedCategories = Object.keys(groupByExtension).sort((a, b) => {
+    const indexA = categoryOrder.indexOf(a);
+    const indexB = categoryOrder.indexOf(b);
+
+    if (indexA !== -1 && indexB !== -1) {
+      return indexA - indexB;
+    } else if (indexA !== -1) {
+      return -1;
+    } else if (indexB !== -1) {
+      return 1;
     }
 
-    acc[extension].push(file);
-    return acc;
-  }, {});
+    return a.localeCompare(b);
+  });
 
   return (
-    <main className="container flex flex-col">
-      {groupByExtension?.pdf?.length > 0 && (
-        <PdfDisplay pdfFiles={groupByExtension.pdf} />
-      )}{" "}
+    <main className="flex flex-col gap-y-12">
+      {/* {documentFiles.length > 0 && <PdfDisplay files={documentFiles} />}
+      {videoFiles.length > 0 && <VideoDisplay files={videoFiles} />} */}
+      {sortedCategories.map((category, index) => (
+        <>
+          {index !== 0 && <Separator className="h-[3px]" />}
+          <CategoryFileDisplay
+            key={category}
+            files={groupByExtension[category]}
+            showDownloadButton={category === "Slides"}
+          />
+        </>
+      ))}
     </main>
   );
 }

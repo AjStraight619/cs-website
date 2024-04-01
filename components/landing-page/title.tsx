@@ -1,7 +1,7 @@
 const Title = () => {
   return (
-    <h1 className="font-bold text-3xl text-center pt-8 md:pt-4 mb-24">
-      CS210 Data Structures & Algorithms Spring 2024
+    <h1 className="leading-loose font-roboto_condensed tracking-tight text-5xl pt-8 md:pt-4 mb-24 text-center">
+      Data Structures & Algorithms
     </h1>
   );
 };

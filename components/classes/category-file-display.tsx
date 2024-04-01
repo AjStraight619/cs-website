@@ -1,14 +1,19 @@
-"use client";
-import { CategorizedGoogleDriveFile, GoogleDriveFile } from "@/lib/types";
-import { Download, DownloadIcon } from "lucide-react";
 import React from "react";
+import { CategorizedGoogleDriveFile } from "@/lib/types";
 import CategoryDivider from "./category-divider";
+import { DownloadIcon } from "lucide-react";
 
-type PdfDisplayProps = {
+type CategoryFileDisplayProps = {
   files: CategorizedGoogleDriveFile[];
+  showDownloadButton?: boolean;
 };
 
-const PdfDisplay = ({ files }: PdfDisplayProps) => {
+const CategoryFileDisplay: React.FC<CategoryFileDisplayProps> = ({
+  files,
+  showDownloadButton = false,
+}) => {
+  if (files.length === 0) return null;
+
   return (
     <section className="mb-12">
       <CategoryDivider>{files[0].category}</CategoryDivider>
@@ -19,15 +24,18 @@ const PdfDisplay = ({ files }: PdfDisplayProps) => {
             .split(".")
             .slice(0, -1)
             .join(".");
+
           return (
             <li key={index} style={{ width: "100%", height: "500px" }}>
               <div className="flex items-center gap-x-3 m-2">
                 <h2 className="text-muted-foreground">
                   {fileNameWithoutExtension}
                 </h2>
-                <a href={file.webContentLink}>
-                  <DownloadIcon className="opacity-50 hover:opacity-100 transition-colors duration-150" />
-                </a>
+                {showDownloadButton && (
+                  <a href={file.webContentLink}>
+                    <DownloadIcon className="opacity-50 hover:opacity-100 transition-colors duration-150" />
+                  </a>
+                )}
               </div>
               <iframe
                 src={embedUrl}
@@ -41,4 +49,4 @@ const PdfDisplay = ({ files }: PdfDisplayProps) => {
   );
 };
 
-export default PdfDisplay;
+export default CategoryFileDisplay;

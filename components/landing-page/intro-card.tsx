@@ -24,14 +24,19 @@ export const IntroCard = ({
 }: IntroCardProps) => {
   return (
     <Card className="min-w-[16rem]">
-      <CardHeader className="flex items-center justify-center">
-        <div>
-          {image ? (
-            <Image src={image} alt="headshot" width={100} height={100} />
-          ) : (
-            <IoPersonCircleOutline className="w-24 h-24" />
-          )}
-        </div>
+      <CardHeader className="flex items-center justify-center w-full p-3">
+        {image ? (
+          <Image
+            src={image}
+            alt="headshot"
+            width="192"
+            height="192"
+            priority={true}
+            className="h-24 w-24 rounded-full object-cover border-[0.2rem] border-white shadow-xl"
+          />
+        ) : (
+          <IoPersonCircleOutline className="w-24 h-24" />
+        )}
         <CardTitle>{position}</CardTitle>
         <CardDescription>{name}</CardDescription>
       </CardHeader>

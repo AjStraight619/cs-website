@@ -12,7 +12,16 @@ import { Label } from "@/components/ui/label";
 import { useState } from "react";
 
 export default function GradeCalculatorPage() {
-  const [grade, setGrad] = useState("");
+  const [values, setValues] = useState({
+    homework: "",
+    midterm: "",
+    final: "",
+  });
+
+  const handleChange = () => {};
+
+  const handleSubmit = () => {};
+
   return (
     <main className="py-16 container flex items-center justify-center min-h-screen">
       <Card className="w-1/3">

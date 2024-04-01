@@ -13,9 +13,9 @@ const ClassCards = () => {
         {classOptions.map((option, index) => (
           <motion.li className="w-full" key={index}>
             <Link href={option.href}>
-              <Card className="group transition-all cursor-pointer hover:scale-105 shadow-sm flex items-center justify-center pt-4">
+              <Card className="group transition-all cursor-pointer hover:scale-105 shadow-sm flex items-center justify-center pt-4 bg-discordPurple hover:bg-discordPurpleHover">
                 <CardContent className="flex gap-2 items-center justify-center">
-                  <span>{option.icon}</span>
+                  {/* <span>{option.icon}</span> */}
                   <span className="font-semibold text-lg">{option.name}</span>
                   <span className="group-hover:translate-x-2 duration-300">
                     <ArrowRight />

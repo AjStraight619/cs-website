@@ -4,32 +4,14 @@ import { SiCplusplus } from "react-icons/si";
 
 export const classOptions = [
   {
-    name: "Java",
+    name: "CS 460",
     icon: React.createElement(FaJava, { size: "2em" }),
-    href: "/java",
+    href: "/cs460",
   },
   {
-    name: "C++",
+    name: "CS 210",
     icon: React.createElement(SiCplusplus, { size: "2em" }),
-    href: "/cpp",
-  },
-];
-
-export const discordOptions = [
-  {
-    name: "CS 210-section 1",
-    href: "https://discord.gg/CS210",
-    icon: React.createElement(FaDiscord, { size: "2em" }),
-  },
-  {
-    name: "CS 210-section 1",
-    href: "https://discord.gg/CS210",
-    icon: React.createElement(FaDiscord, { size: "2em" }),
-  },
-  {
-    name: "CS 210-section 1",
-    href: "https://discord.gg/CS210",
-    icon: React.createElement(FaDiscord, { size: "2em" }),
+    href: "/cs210",
   },
 ];
 
@@ -41,11 +23,19 @@ export const people = [
   },
   {
     name: "Lokesh",
+    class: "CS 210",
     position: "TA",
     image: "",
   },
   {
     name: "Jaydeep",
+    class: "CS 210",
+    position: "TA",
+    image: "/Jaydeep.jpg",
+  },
+  {
+    name: "Marcus",
+    class: "CS 460",
     position: "TA",
     image: "",
   },
@@ -57,12 +47,8 @@ export const navLinks = [
     href: "/",
   },
   {
-    label: "Syllabus",
-    href: "/syllabus",
-  },
-  {
-    label: "GradeCalc",
-    href: "/grade-calculator",
+    label: "Calendar",
+    href: "/calendar",
   },
 ];
 
@@ -109,3 +95,11 @@ export const liVariants = {
     y: 0,
   },
 };
+
+// export const cs460Links = [
+//   {
+//     name: "",
+//     href: "",
+//   },
+//   {},
+// ];

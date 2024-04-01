@@ -1,14 +1,12 @@
-"use client";
-import { CategorizedGoogleDriveFile, GoogleDriveFile } from "@/lib/types";
-import { Download, DownloadIcon } from "lucide-react";
+import { CategorizedGoogleDriveFile } from "@/lib/types";
 import React from "react";
 import CategoryDivider from "./category-divider";
 
-type PdfDisplayProps = {
+type VideoDisplayProps = {
   files: CategorizedGoogleDriveFile[];
 };
 
-const PdfDisplay = ({ files }: PdfDisplayProps) => {
+const VideoDisplay = ({ files }: VideoDisplayProps) => {
   return (
     <section className="mb-12">
       <CategoryDivider>{files[0].category}</CategoryDivider>
@@ -25,9 +23,9 @@ const PdfDisplay = ({ files }: PdfDisplayProps) => {
                 <h2 className="text-muted-foreground">
                   {fileNameWithoutExtension}
                 </h2>
-                <a href={file.webContentLink}>
+                {/* <a href={file.webContentLink}>
                   <DownloadIcon className="opacity-50 hover:opacity-100 transition-colors duration-150" />
-                </a>
+                </a> */}
               </div>
               <iframe
                 src={embedUrl}
@@ -41,4 +39,4 @@ const PdfDisplay = ({ files }: PdfDisplayProps) => {
   );
 };
 
-export default PdfDisplay;
+export default VideoDisplay;

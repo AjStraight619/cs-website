@@ -1,12 +1,9 @@
 "use client";
-
 import Link from "next/link";
-import SearchBar from "../search/search";
 import SearchDialog from "../search/search-dialog";
 import { ModeToggle } from "../ui/theme-toggle";
 import { liVariants, navLinks, ulVariants } from "@/lib/data";
 import { usePathname } from "next/navigation";
-import BackButton from "../ui/back-button";
 import { Button } from "../ui/button";
 import { useEffect, useState } from "react";
 import { MenuIcon } from "lucide-react";
@@ -14,11 +11,11 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const navVariants = {
   hidden: {
-    y: "-100vh", // Start above the screen
+    y: "-100vh",
     opacity: 0,
   },
   show: {
-    y: 0, // End at its original position
+    y: 0,
     opacity: 1,
     transition: {
       type: "spring",
@@ -27,7 +24,7 @@ const navVariants = {
     },
   },
   exit: {
-    y: "-100vh", // Exit to above the screen
+    y: "-100vh",
     opacity: 0,
     transition: { ease: "easeInOut", duration: 0.5 },
   },
@@ -63,7 +60,7 @@ export const Nav = () => {
 
   return (
     <>
-      <nav className="fixed top-0 w-full h-16 border-b border-muted-foreground backdrop-blur-lg z-[999] font-poppins">
+      <nav className="fixed top-0 w-full h-16 border-b border-muted-foreground backdrop-blur-lg z-[999] font-inter bg-discordPurple">
         <div className="md:container md:max-w-4xl flex items-center w-full h-full">
           <div className="flex items-center justify-between w-full">
             <div className="hidden sm:block">
@@ -71,11 +68,12 @@ export const Nav = () => {
                 {navLinks.map((link, index) => (
                   <li key={index} className="space-x-2">
                     <Link
-                      className={`ml-2 opacity-50 hover:opacity-100 ${
-                        pathname === link.href ? "underline opacity-100" : ""
-                      }`}
-                      key={index}
                       href={link.href}
+                      className={`ml-6 font-sans text-primary-foreground ${
+                        pathname === link.href
+                          ? "underline opacity-100"
+                          : "opacity-50 hover:opacity-100"
+                      }`}
                     >
                       {link.label}
                     </Link>
