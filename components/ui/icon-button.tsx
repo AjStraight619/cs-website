@@ -1,7 +1,7 @@
-import React from "react";
-import { Button, ButtonProps } from "./button";
+import React from 'react'
+import { Button, ButtonProps } from './button'
 
-type IconButtonProps = ButtonProps;
+type IconButtonProps = ButtonProps
 
 const IconButton = (props: IconButtonProps) => {
   return (
@@ -13,7 +13,7 @@ const IconButton = (props: IconButtonProps) => {
     >
       {props.children}
     </Button>
-  );
-};
+  )
+}
 
-export default IconButton;
+export default IconButton
