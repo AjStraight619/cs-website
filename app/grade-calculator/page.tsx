@@ -11,7 +11,10 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useState } from "react";
 
-type Grade = {};
+type Grade = {
+  grade: string;
+  weight: number;
+};
 
 export default function GradeCalculatorPage() {
   const [values, setValues] = useState({

@@ -37,7 +37,7 @@ export const people = [
     name: "Marcus",
     class: "CS 460",
     position: "TA",
-    image: "",
+    image: "/Marcus.jpg",
   },
 ];
 
