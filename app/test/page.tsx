@@ -22,9 +22,5 @@ export default async function TestPage() {
 
   console.log(JSON.stringify(discordData, null, 2))
 
-  return (
-    <main className="flex items-center justify-center h-full">
-      {/* {externalLinks.map} */}
-    </main>
-  )
+  return <main className="flex items-center justify-center h-full"></main>
 }

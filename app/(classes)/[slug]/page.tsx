@@ -1,3 +1,4 @@
+import Title from '@/components/classes/title'
 import { Topics } from '@/components/classes/topics'
 import TopicsFetcher from '@/components/classes/topics-fetcher'
 import { Separator } from '@/components/ui/separator'
@@ -18,12 +19,15 @@ export default async function Page({ params }: PageProps) {
       ? '1c6FZ7t5MUjFi8jiicgh1_mRd9XqkcZ8k'
       : '149mtuEwIJry3mKvXFtN_djAzjnR96UsM'
 
+  const title = params.slug === 'cs210' ? 'CS 210' : 'CS 460'
+
   return (
     <main className="min-h-screen">
+      <Title>{title}</Title>
       <h1 className="text-4xl font-bold mb-4">Topics</h1>
       <Suspense
         fallback={
-          <div className="flex flex-col space-y-8 w-full md:w-40">
+          <div className="flex flex-col space-y-8 w-full md:w-64">
             {Array.from({ length: 9 }, (_, index) => (
               <Skeleton className="h-4 w-full" key={index} />
             ))}

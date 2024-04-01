@@ -1,9 +1,10 @@
 'use client'
-import { externalLinks } from '@/lib/data'
+import { externalLinks, liVariants, ulVariants } from '@/lib/data'
 import { usePathname } from 'next/navigation'
 import React from 'react'
 import CategoryDivider from './category-divider'
 import { ExternalLinkIcon } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 const ExternalLinks = () => {
   const pathname = usePathname()
@@ -15,11 +16,17 @@ const ExternalLinks = () => {
     <section className="mb-12">
       <div className="flex flex-col container">
         <CategoryDivider isResources={true}>Resources</CategoryDivider>
-        <ul className="flex flex-col gap-4">
+        <motion.ul
+          animate="show"
+          initial="hidden"
+          variants={ulVariants}
+          className="flex flex-col gap-4"
+        >
           {Object.entries(externalLinks).map(([key, values]) => {
             if (key === urlKey) {
               return values.map((link, index) => (
-                <li
+                <motion.li
+                  variants={liVariants}
                   className="opacity-60 hover:opacity-100 transition-colors duration-150 "
                   key={index}
                 >
@@ -34,13 +41,13 @@ const ExternalLinks = () => {
                       <ExternalLinkIcon size={20} />
                     </span>
                   </a>
-                </li>
+                </motion.li>
               ))
             } else {
               return null
             }
           })}
-        </ul>
+        </motion.ul>
       </div>
     </section>
   )
