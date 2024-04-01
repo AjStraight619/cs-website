@@ -9,11 +9,11 @@ const discordIframes = [
   },
   {
     name: 'CS 210 Section 2',
-    src: '"https://discord.com/widget?id=1183649706065276948&theme=dark"',
+    src: 'https://discord.com/widget?id=1183649706065276948&theme=dark',
   },
   {
     name: 'CS 460 Section 3',
-    src: '"https://discord.com/widget?id=1183649881026461747&theme=dark"',
+    src: 'https://discord.com/widget?id=1183649881026461747&theme=dark',
   },
 ]
 
