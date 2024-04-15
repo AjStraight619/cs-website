@@ -125,20 +125,75 @@ export const externalLinks: ExternalLinks = {
 
   Recursion: [
     {
-      name: 'Recursion Cheat Sheet',
-      href: 'https://www.techinterviewhandbook.org/algorithms/recursion/',
-    },
-    {
-      name: 'Google Dev Guide',
-      href: 'https://techdevguide.withgoogle.com/resources/topics/recursion/',
-    },
-    {
       name: 'Recursion',
-      href: 'https://www.geeksforgeeks.org/recursion/',
+      href: 'https://users.cs.utah.edu/~germain/PPS/Topics/recursion.html',
+    },
+    {
+      name: 'Recursion and Stack',
+      href: 'https://javascript.info/recursion',
+    },
+    {
+      name: 'Geeks for Geeks',
+      href: 'https://www.geeksforgeeks.org/recursive-functions/',
     },
     {
       name: 'Sample Lab',
-      href: 'https://www.labs.cs.uregina.ca/115/12-recursion/',
+      href: 'https://www.cs.mtsu.edu/~cs2170/manual/lab9/lab9.html',
+    },
+  ],
+
+  Sorting: [
+    {
+      name: 'Quick Review Videos',
+      href: 'https://www.youtube.com/watch?v=4VqmGXwpLqc&list=PL9xmBV_5YoZOZSbGAXAPIq1BeUf4j20pl',
+    },
+    {
+      name: 'Sorting Visualizer',
+      href: 'https://visualgo.net/en/sorting',
+    },
+    {
+      name: 'Sorting Visualizer 2',
+      href: 'https://www.sortvisualizer.com/',
+    },
+    {
+      name: 'Sorting in C++',
+      href: 'https://www.softwaretestinghelp.com/sorting-techniques-in-cpp/',
+    },
+  ],
+  Hashtables: [
+    {
+      name: 'Hashtables in C++',
+      href: 'https://www.digitalocean.com/community/tutorials/hash-table-in-c-plus-plus',
+    },
+    {
+      name: 'Data Structures Handbook',
+      href: 'https://www.thedshandbook.com/hash-tables/',
+    },
+    {
+      name: 'Quick Review',
+      href: 'https://www.youtube.com/watch?v=knV86FlSXJ8',
+    },
+  ],
+  Graphs: [
+    {
+      name: 'Intro to Graphs',
+      href: 'https://inst.eecs.berkeley.edu/~cs61bl/r//cur/graphs/intro.html?topic=lab23.topic&step=2&course=',
+    },
+    {
+      name: 'Minimum Spanning Trees',
+      href: 'https://algs4.cs.princeton.edu/43mst//',
+    },
+    {
+      name: 'Single Source Shortest Path Algorithms',
+      href: 'https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15850-f18/www/scribes/lecture04.pdf',
+    },
+    {
+      name: 'Graph Traversals',
+      href: 'https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/GraphTraversal.html',
+    },
+    {
+      name: 'Graph Theory : Mathematics',
+      href: 'https://www.youtube.com/watch?v=sWsXBY19o8I',
     },
   ],
 } as const
