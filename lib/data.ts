@@ -195,5 +195,57 @@ export const externalLinks: ExternalLinks = {
       name: 'Graph Theory : Mathematics',
       href: 'https://www.youtube.com/watch?v=sWsXBY19o8I',
     },
+    {
+      name: 'Graph Visualizations',
+      href: 'https://visualgo.net/en',
+    },
+  ],
+  Trees: [
+    {
+      name: 'W3Schools',
+      href: 'https://www.w3schools.com/dsa/dsa_theory_trees.php',
+    },
+    {
+      name: 'Binary Trees : Geeks for Geeks',
+      href: 'https://www.geeksforgeeks.org/binary-tree-data-structure/',
+    },
+    {
+      name: 'Notes on BST',
+      href: 'http://cslibrary.stanford.edu/110/BinaryTrees.html',
+    },
+    {
+      name: 'AVL Insertions',
+      href: 'https://www.youtube.com/watch?v=JPI-DPizQYk',
+    },
+    {
+      name: 'AVL Notes',
+      href: 'https://www.cs.cmu.edu/~15122/handouts/lectures/16-avl.pdf',
+    },
+    {
+      name: 'RB Trees Notes',
+      href: 'https://pages.cs.wisc.edu/~cs400/readings/Red-Black-Trees/',
+    },
+    {
+      name: 'Tree Traversals',
+      href: 'https://faculty.cs.niu.edu/~mcmahon/CS241/Notes/Data_Structures/binary_tree_traversals.html',
+    },
+  ],
+  'Priority Queues & Heaps': [
+    {
+      name: 'C++ Priority Queue',
+      href: 'https://cplusplus.com/reference/queue/priority_queue/',
+    },
+    {
+      name: 'DS Handbook',
+      href: 'https://www.thedshandbook.com/heaps/',
+    },
+    {
+      name: 'Notes on Heaps',
+      href: 'https://web.stanford.edu/class/archive/cs/cs161/cs161.1168/lecture4.pdf',
+    },
+    {
+      name: 'Notes on Priority Queues',
+      href: 'https://www.cs.princeton.edu/courses/archive/spr15/cos226/lectures/24PriorityQueues.pdf',
+    },
   ],
 } as const
