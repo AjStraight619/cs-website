@@ -1,6 +1,6 @@
 'use client'
 import {
-  externalLinks,
+  externalLinks210,
   liVariants,
   ulVariants,
   externalLinks460,
@@ -29,7 +29,7 @@ const ExternalLinks = () => {
           className="flex flex-col gap-4"
         >
           {Object.entries(
-            csClass === 'cs210' ? externalLinks : externalLinks460
+            csClass === 'cs210' ? externalLinks210 : externalLinks460
           ).map(([key, values]) => {
             if (key === urlKey) {
               return values.map((link, index) => (

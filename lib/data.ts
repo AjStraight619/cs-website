@@ -112,7 +112,7 @@ export const externalLinks460: ExternalLinks = {
   ],
 }
 
-export const externalLinks: ExternalLinks = {
+export const externalLinks210: ExternalLinks = {
   'Linked Lists, Stacks & Queues': [
     {
       name: 'Linked List Cheat Sheet',
