@@ -103,6 +103,15 @@ type ExternalLinks = {
   }[]
 }
 
+export const externalLinks460: ExternalLinks = {
+  test: [
+    {
+      name: 'test',
+      href: 'testLink',
+    },
+  ],
+}
+
 export const externalLinks: ExternalLinks = {
   'Linked Lists, Stacks & Queues': [
     {
@@ -248,4 +257,4 @@ export const externalLinks: ExternalLinks = {
       href: 'https://www.cs.princeton.edu/courses/archive/spr15/cos226/lectures/24PriorityQueues.pdf',
     },
   ],
-} as const
+}
