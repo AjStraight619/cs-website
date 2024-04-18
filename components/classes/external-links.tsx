@@ -1,5 +1,10 @@
 'use client'
-import { externalLinks, liVariants, ulVariants } from '@/lib/data'
+import {
+  externalLinks,
+  liVariants,
+  ulVariants,
+  externalLinks460,
+} from '@/lib/data'
 import { usePathname } from 'next/navigation'
 import React from 'react'
 import CategoryDivider from './category-divider'
