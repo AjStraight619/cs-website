@@ -8,6 +8,7 @@ import { Button } from '../ui/button'
 import { useEffect, useState } from 'react'
 import { MenuIcon } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
+import Calculator from '../grade-calculator/calculator'
 
 const navVariants = {
   hidden: {
@@ -64,9 +65,9 @@ export const Nav = () => {
         <div className="md:container md:max-w-4xl flex items-center w-full h-full">
           <div className="flex items-center justify-between w-full">
             <div className="hidden sm:block">
-              <ul className="flex items-center">
+              <ul className="flex items-center gap-x-2">
                 {navLinks.map((link, index) => (
-                  <li key={index} className="space-x-2">
+                  <li key={index}>
                     <Link
                       href={link.href}
                       className={`ml-6 font-sans text-gray-50 ${
@@ -79,6 +80,9 @@ export const Nav = () => {
                     </Link>
                   </li>
                 ))}
+                <li className="ml-6">
+                  <Calculator />
+                </li>
               </ul>
             </div>
             <div className="sm:hidden block">
