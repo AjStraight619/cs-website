@@ -21,7 +21,7 @@ export default async function TopicPage({ params }: TopicsPageProps) {
   // console.log(title, id)
 
   const [title, id] = params.nameId
-  console.log(title, id)
+  console.log('Title and id: ', title, id)
 
   const decodedCredentials = Buffer.from(
     process.env.GOOGLE_APPLICATION_CREDENTIALS!,

@@ -14,7 +14,8 @@ import { motion } from 'framer-motion'
 const ExternalLinks = () => {
   const pathname = usePathname()
   const urlKey = pathname.split('/')[2].split('-').join(' ')
-
+  const csClass = pathname.split('/')[1]
+  console.log('csClass: ', csClass)
   console.log('urlKey:', urlKey)
 
   return (
@@ -27,7 +28,9 @@ const ExternalLinks = () => {
           variants={ulVariants}
           className="flex flex-col gap-4"
         >
-          {Object.entries(externalLinks).map(([key, values]) => {
+          {Object.entries(
+            csClass === 'cs210' ? externalLinks : externalLinks460
+          ).map(([key, values]) => {
             if (key === urlKey) {
               return values.map((link, index) => (
                 <motion.li
