@@ -25,11 +25,15 @@ const SearchDialog = () => {
     <Dialog>
       <DialogTrigger asChild>
         <button
-          className="sm:mt-0 sm:w-10 p-2 relative  items-center border border-gray-50 rounded-md text-primary/70 hover:text-primary z-[999] inline-flex gap-2 transition-colors duration-150 text-gray-50"
+          className="group sm:mt-0 sm:w-10 p-2 relative items-center border border-gray-50/70 text-gray-50/70 rounded-md hover:border-gray-50 hover:text-gray-50 z-[999] inline-flex gap-2 transition-colors duration-150 hover:bg-discordPurpleHover"
           style={{ minWidth: '200px' }}
         >
-          <Search className="absolute left-3 text-gray-50 " />
-          <span className="ml-8 text-gray-50 ">Search...</span>
+          {/* Icon with group-hover effect to change color */}
+          <Search className="absolute left-3 text-gray-50/70  group-hover:text-gray-50 duration-150" />
+          {/* Text with group-hover effect to change color */}
+          <span className="ml-8 text-gray-50/70  group-hover:text-gray-50 duration-150">
+            Search...
+          </span>
         </button>
       </DialogTrigger>
       <DialogContent>

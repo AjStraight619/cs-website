@@ -15,8 +15,6 @@ const ExternalLinks = () => {
   const pathname = usePathname()
   const urlKey = pathname.split('/')[2].split('-').join(' ')
   const csClass = pathname.split('/')[1]
-  console.log('csClass: ', csClass)
-  console.log('urlKey:', urlKey)
 
   return (
     <section className="mb-12">

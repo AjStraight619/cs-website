@@ -27,7 +27,6 @@ const TopicsFetcher = async ({ folderId }: TopicsFetcherProps) => {
   })
 
   const topics = driveResponse.data.files as TopicsType[]
-  console.log(topics)
   return <Topics topics={topics} />
 }
 

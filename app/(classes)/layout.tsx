@@ -1,10 +1,7 @@
-import { Skeleton } from '@/components/ui/skeleton'
-import { Suspense } from 'react'
-
 export default function ClassLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return <div className="p-24">{children}</div>
+  return <div className="md:p-24 px-12 py-24">{children}</div>
 }

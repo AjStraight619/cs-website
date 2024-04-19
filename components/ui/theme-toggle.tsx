@@ -19,7 +19,7 @@ export function ModeToggle() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          className="border border-gray-50 bg-transparent hover:bg-discordPurpleHover text-gray-50"
+          className="border border-gray-50/70 bg-transparent hover:bg-discordPurpleHover text-gray-50/70 hover:text-gray-50"
           variant="outline"
           size="icon"
         >

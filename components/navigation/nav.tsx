@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react'
 import { MenuIcon } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import Calculator from '../grade-calculator/calculator'
+import IconButton from '../ui/icon-button'
 
 const navVariants = {
   hidden: {
@@ -86,14 +87,14 @@ export const Nav = () => {
               </ul>
             </div>
             <div className="sm:hidden block">
-              <Button
+              <IconButton
                 size="icon"
-                variant="outline"
+                variant="ghost"
                 className="z-[999] ml-2"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
                 <MenuIcon className="z-[999]" />
-              </Button>
+              </IconButton>
             </div>
 
             <div className="flex items-center gap-x-4 mr-2 md:mr-0">
