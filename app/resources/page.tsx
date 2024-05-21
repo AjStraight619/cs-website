@@ -1,7 +1,7 @@
 export default function ResourcesPage() {
   return (
     <main>
-      <div>Yo</div>
+      <div>Potential Future menu option</div>
     </main>
-  );
+  )
 }
