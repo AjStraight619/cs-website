@@ -1,3 +1,4 @@
+'use client'
 import { people } from '@/lib/data'
 import { IntroCard } from './intro-card'
 import { SectionDivider } from './section-divider'

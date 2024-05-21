@@ -10,19 +10,26 @@ import {
 import { CardDescription } from '../ui/card'
 import { ToggleGroup, ToggleGroupItem } from '../ui/toggle-group'
 
-import CalculatorForm from './calculator-form'
+import CalculatorForm210 from './calculator-form210'
 import { AnimatePresence } from 'framer-motion'
+import CalculatorForm460 from './calculator-form460'
 
 type CsClass = 'CS 210' | 'CS 460'
 
 const Calculator = () => {
   const [csClass, setCsClass] = useState<CsClass | undefined>(undefined)
+  const [isGradeDialogOpen, setIsGradeDialogOpen] = useState(false)
 
-  useEffect(() => {}, [])
+  const handleDialogChange = () => {
+    setIsGradeDialogOpen((prev) => !prev)
+  }
 
   return (
-    <Dialog>
-      <DialogTrigger className="font-sans text-gray-50 opacity-50 hover:opacity-100">
+    <Dialog open={isGradeDialogOpen} onOpenChange={setIsGradeDialogOpen}>
+      <DialogTrigger
+        onClick={() => setIsGradeDialogOpen(true)}
+        className="font-sans text-gray-50 opacity-50 hover:opacity-100"
+      >
         Calculator
       </DialogTrigger>
       <DialogContent>
@@ -42,7 +49,17 @@ const Calculator = () => {
           </ToggleGroupItem>
         </ToggleGroup>
         <AnimatePresence>
-          {csClass && <CalculatorForm csClass={csClass} />}
+          {csClass === 'CS 210' ? (
+            <CalculatorForm210
+              handleDialogChange={handleDialogChange}
+              csClass={csClass}
+            />
+          ) : (
+            <CalculatorForm460
+              handleDialogChange={handleDialogChange}
+              csClass={csClass}
+            />
+          )}
         </AnimatePresence>
       </DialogContent>
     </Dialog>

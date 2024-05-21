@@ -33,6 +33,25 @@ export const people = [
     position: 'TA',
     image: '/Marcus.jpg',
   },
+  {
+    name: 'Alex',
+    class: 'CS 210',
+    position: 'TA',
+    image: '/Alex.webp',
+    portfolioLink: 'https://alex-straight.vercel.app/',
+  },
+  {
+    name: 'Halie',
+    class: 'CS 210',
+    position: 'TA',
+    image: '',
+  },
+  {
+    name: 'Stanley',
+    class: 'CS 210',
+    position: 'TA',
+    image: '',
+  },
 ]
 
 export const navLinks = [
