@@ -22,12 +22,6 @@ export const people = [
     image: '/headshot.svg',
   },
   {
-    name: 'Lokesh',
-    class: 'CS 210',
-    position: 'TA',
-    image: '/Lokesh.jpg',
-  },
-  {
     name: 'Jaydeep',
     class: 'CS 210',
     position: 'TA',
@@ -255,6 +249,24 @@ export const externalLinks210: ExternalLinks = {
     {
       name: 'Notes on Priority Queues',
       href: 'https://www.cs.princeton.edu/courses/archive/spr15/cos226/lectures/24PriorityQueues.pdf',
+    },
+  ],
+  'Analysis Of algorithms': [
+    {
+      name: 'Big O Exercises',
+      href: 'https://www.cs.auckland.ac.nz/courses/compsci220s1t/lectures/lecturenotes/GG-lectures/220exercises1.pdf',
+    },
+    {
+      name: 'MIT Lecture Notes',
+      href: 'https://web.mit.edu/16.070/www/lecture/big_o.pdf',
+    },
+    {
+      name: 'Big O Cheatsheet',
+      href: 'https://flexiple.com/algorithms/big-o-notation-cheat-sheet',
+    },
+    {
+      name: 'Big O Calc',
+      href: 'https://www.bigocalc.com/',
     },
   ],
 }

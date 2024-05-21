@@ -1,3 +1,4 @@
+import Syllabus from '@/components/classes/syllabus'
 import Title from '@/components/classes/title'
 import { Topics } from '@/components/classes/topics'
 import TopicsFetcher from '@/components/classes/topics-fetcher'
@@ -24,6 +25,10 @@ export default async function Page({ params }: PageProps) {
   return (
     <main className="min-h-screen">
       <Title>{title}</Title>
+      <div className="mb-8">
+        <Syllabus />
+      </div>
+
       <h1 className="text-4xl font-roboto_condensed mb-4 text-discordText">
         Topics
       </h1>
