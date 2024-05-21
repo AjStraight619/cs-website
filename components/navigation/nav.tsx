@@ -99,7 +99,6 @@ export const Nav = () => {
 
             <div className="flex items-center gap-x-4 mr-2 md:mr-0">
               <SearchDialog />
-              <ModeToggle />
             </div>
           </div>
         </div>

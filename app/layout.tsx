@@ -47,16 +47,9 @@ export default function RootLayout({
             `${poppins.variable} ${inter.variable} ${robot_condensed.variable} flex flex-col min-h-screen bg-background antialiased`
           )}
         >
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Nav />
-            <BackButton />
-            {children}
-          </ThemeProvider>
+          <Nav />
+          <BackButton />
+          {children}
         </body>
       </html>
     </>
