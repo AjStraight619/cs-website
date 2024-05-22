@@ -69,7 +69,7 @@ export default function AboutPage() {
               <p className="font-dm_serif_display text-slate-100">
                 {project.description}
               </p>
-              <h4 className="mt-4 mb-2 text-slate-100">
+              <h4 className="mt-4 mb-2 text-discordPurpleHover">
                 In Collaboration with:
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
