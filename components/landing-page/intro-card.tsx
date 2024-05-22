@@ -49,7 +49,7 @@ export const IntroCard = ({
           <IoPersonCircleOutline className="w-24 h-24" />
         )}
 
-        <CardTitle className="font-roboto_condensed mt-5 text-lg text-discordText">
+        <CardTitle className="font-roboto_condensed text-lg text-discordText">
           {name}
         </CardTitle>
 
