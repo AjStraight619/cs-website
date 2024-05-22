@@ -17,8 +17,12 @@ export const Topics = ({ topics }: TopicsProps) => {
   const pathname = usePathname()
   const [topicName, setTopicName] = useState(topics[0].name)
   return (
-    <div className="flex flex-row items-center justify-between">
+    <div className="flex flex-row items-center justify-between font-roboto_condensed">
       <div className="flex flex-col items-start w-full md:w-64">
+        <p className="mb-5">
+          Each topic below is linked to corresponding slides, video lectures and
+          external resources.
+        </p>
         <motion.ul
           initial="hidden"
           animate="show"
