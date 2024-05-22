@@ -32,6 +32,10 @@ export default async function Page({ params }: PageProps) {
       <h1 className="text-4xl font-roboto_condensed text-discordText p-10">
         Topics
       </h1>
+      <p className="font-dm_serif_display ml-5 text-justify">
+        Each topic below is linked to corresponding slides, video lectures and
+        external resources.
+      </p>
       <Suspense
         fallback={
           <div className="flex flex-col space-y-8 w-full md:w-64">

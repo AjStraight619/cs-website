@@ -4,14 +4,14 @@ import { SiCplusplus } from 'react-icons/si'
 
 export const classOptions = [
   {
-    name: 'CS 460',
-    icon: React.createElement(FaJava, { size: '2em' }),
-    href: '/cs460',
-  },
-  {
     name: 'CS 210',
     icon: React.createElement(SiCplusplus, { size: '2em' }),
     href: '/cs210',
+  },
+  {
+    name: 'CS 460',
+    icon: React.createElement(FaJava, { size: '2em' }),
+    href: '/cs460',
   },
 ]
 
@@ -37,6 +37,7 @@ export const people = [
     position: 'TA',
     image: '/Jaydeep.jpg',
     email: 'jpustake1248@sdsu.edu',
+    portfolioLink: 'https://www.linkedin.com/in/jaydeep-pustake//',
   },
   {
     name: 'Alex',
@@ -62,7 +63,39 @@ export const people = [
     email: 'sschwarz0843@sdsu.edu',
   },
 ]
-
+export const people3D = [
+  {
+    name: 'Brandon',
+    image: '/Brandon.jpeg',
+    portfolioLink: 'https://www.linkedin.com/in/brandongarate177/',
+    email: 'brandongarate177@gmail.com',
+  },
+  {
+    name: 'Robert',
+    image: '/Robert.jpg',
+    portfolioLink: 'https://www.linkedin.com/in/robert-ashe-a55b211a7/',
+    email: 'rashe7414@sdsu.edu',
+  },
+]
+export const peopleCWP = [
+  {
+    name: 'Alex',
+    image: '/Alex.webp',
+    email: 'astraight9409@sdsu.edu',
+    portfolioLink: 'https://alex-straight.vercel.app/',
+  },
+  {
+    name: 'Jaydeep',
+    image: '/Jaydeep.jpg',
+    email: 'jpustake1248@sdsu.edu',
+    portfolioLink: 'https://www.linkedin.com/in/jaydeep-pustake//',
+  },
+  {
+    name: 'Jaxon',
+    image: '',
+    email: 'jhill4135@sdsu.edu',
+  },
+]
 export const navLinks = [
   {
     label: 'Home',

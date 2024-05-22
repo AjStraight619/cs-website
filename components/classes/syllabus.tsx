@@ -15,7 +15,7 @@ export default function Syllabus() {
       {course === 'cs210' ? (
         <div className="font-roboto_condensed">
           <h3 className="font-semibold">Course Catalog Description:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             Representations and operations on basic data structures. Arrays,
             linked lists, stacks, queues, and recursion; binary search trees and
             balanced trees; hash tables, dynamic storage management;
@@ -24,10 +24,10 @@ export default function Syllabus() {
           </p>
 
           <h3 className="font-semibold">Goals for this Course:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             Upon completion of this course students will be able to:
           </p>
-          <ul className="mb-5">
+          <ul className="mb-5 font-dm_serif_display">
             <li>Analyze and measure complexities of algorithms</li>
             <li>Write Generic and Reusable code in C++</li>
             <li>
@@ -41,12 +41,12 @@ export default function Syllabus() {
           </ul>
 
           <h3 className="font-semibold">Textbook:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             This course will primarily use ZyBooks. There will be required
             reading worth 5% of the final grade. Instructions to use ZyBooks are
             as follows:
           </p>
-          <ul className="mb-5">
+          <ul className="mb-5 font-dm_serif_display">
             <li>
               Sign in or create an account at{' '}
               <a href="https://learn.zybooks.com">learn.zybooks.com</a>
@@ -59,7 +59,7 @@ export default function Syllabus() {
           </ul>
 
           <h3 className="font-semibold">Programming Language Used:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             C++ in CLion (CLion is free with your SDSU ID). Students must author
             original C++ code for all projects throughout this course. Student
             collaboration is encouraged to discuss programming strategies, but
@@ -68,33 +68,32 @@ export default function Syllabus() {
           </p>
 
           <h3 className="font-semibold">Grading:</h3>
-          <p className="mb-5">
-            <ul className="mb-5">
-              <li>Weekly Assignments (100 Points total worth 10%)</li>
-              <li>ZyBooks Participation (5%)</li>
-              <li>3 Programming assignments (10% each)</li>
-              <li>2 Midterms (15% + 15%)</li>
-              <li>Final Exam (25%)</li>
-            </ul>
-            <strong>Grade Split:</strong>
-            <ul>
-              <li>93% and above: A</li>
-              <li>90%-92%: A–</li>
-              <li>87%-89%: B+</li>
-              <li>83%-86%: B</li>
-              <li>80%-82%: B–</li>
-              <li>77%-79%: C+</li>
-              <li>73%-76%: C</li>
-              <li>70%-72%: C–</li>
-              <li>67%-69%: D+</li>
-              <li>63%-66%: D</li>
-              <li>60%-62%: D–</li>
-              <li>Below 60%: F</li>
-            </ul>
-          </p>
+
+          <ul className="mb-5 font-dm_serif_display">
+            <li>Weekly Assignments (100 Points total worth 10%)</li>
+            <li>ZyBooks Participation (5%)</li>
+            <li>3 Programming assignments (10% each)</li>
+            <li>2 Midterms (15% + 15%)</li>
+            <li>Final Exam (25%)</li>
+          </ul>
+          <h3 className="font-semibold">Grade Split:</h3>
+          <ul className="mb-5 font-dm_serif_display">
+            <li>93% and above: A</li>
+            <li>90%-92%: A–</li>
+            <li>87%-89%: B+</li>
+            <li>83%-86%: B</li>
+            <li>80%-82%: B–</li>
+            <li>77%-79%: C+</li>
+            <li>73%-76%: C</li>
+            <li>70%-72%: C–</li>
+            <li>67%-69%: D+</li>
+            <li>63%-66%: D</li>
+            <li>60%-62%: D–</li>
+            <li>Below 60%: F</li>
+          </ul>
 
           <h3 className="font-semibold">Turning in Work:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             Instructions on what, when, where, and how to turn in assignments
             will be posted on Canvas, email, and Discord. It is the student’s
             responsibility to understand when and how to turn in the
@@ -102,11 +101,11 @@ export default function Syllabus() {
           </p>
 
           <h3 className="font-semibold">Late Coursework:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             All assignments are due on the date as stated on canvas. Once the
             due has passed links will be closed. Late Assignments will be marked
             down 25% every day of delay.
-            <ul className="mb-5">
+            <ul className="mb-5 font-dm_serif_display">
               <li>1 Day Late -25%</li>
               <li>2 Days Late -50%</li>
               <li>3 Day Late -75%</li>
@@ -115,7 +114,7 @@ export default function Syllabus() {
           </p>
 
           <h3 className="font-semibold">Exams:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             Exams will be closed book/closed notes. Computers/laptops and cell
             phones cannot be used during exams. Once an exam starts, students
             cannot leave and then return to the test room. Once a student leaves
@@ -125,7 +124,7 @@ export default function Syllabus() {
             time, and location of the midterms and final exam will be posted on
             Canvas.
           </p>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             Unexcused absences on the day of an exam will result in the student
             receiving a 0 on the exam. No make-up exams will be given for
             unexcused absences from the exam. If the student has a prior known
@@ -144,7 +143,7 @@ export default function Syllabus() {
           </p>
 
           <h3 className="font-semibold">Classroom Etiquette:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             Cell phones should be turned off or set to vibrate mode during
             class. If using laptops/electronic equipment to take notes, please
             use it on mute. Class participation is highly encouraged; ask
@@ -152,7 +151,7 @@ export default function Syllabus() {
           </p>
 
           <h3 className="font-semibold">Academic Honesty:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             The college experience is founded on the concepts of honesty and
             integrity. Dishonesty, cheating, plagiarism, or knowingly furnishing
             false information to the college are regarded as particularly
@@ -162,7 +161,7 @@ export default function Syllabus() {
           </p>
 
           <h3 className="font-semibold">Special Accommodations:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             If you are a student with a disability and believe you will need
             accommodations for this class, it is your responsibility to contact
             Student Disability Services at (619) 594-6473. To avoid any delay in
@@ -179,7 +178,7 @@ export default function Syllabus() {
       ) : (
         <div className="font-roboto_condensed">
           <h3 className="font-semibold">Course Catalog Description:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             Algorithms for solving frequently occurring problems. Analysis
             techniques, divide and conquer algorithms with applications, graph
             problems, greedy algorithms. Introduction to NP complete problems.
@@ -187,16 +186,16 @@ export default function Syllabus() {
           </p>
 
           <h3 className="font-semibold">Goals for this Course:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             Upon completion of this course students will be able to:
           </p>
-          <ul className="mb-5">
+          <ul className="mb-5 font-dm_serif_display">
             <li>Analyze and measure complexities of algorithms</li>
             <li>Write Proof of optimality and completeness of algorithms</li>
           </ul>
 
           <h3 className="font-semibold">Textbook:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             <ul className="mb-5">
               <li>The Algorithm Design Manual - Steven Skiena</li>
               <li>
@@ -207,7 +206,7 @@ export default function Syllabus() {
           </p>
 
           <h3 className="font-semibold">Grading:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             <ul className="mb-5">
               <li>Weekly Assignments (35%)</li>
               <li>Quizzes & Participation (10%)</li>
@@ -216,7 +215,7 @@ export default function Syllabus() {
               <li>Final Exam (25%)</li>
             </ul>
             <strong>Grade Split:</strong>
-            <ul>
+            <ul className="font-dm_serif_display">
               <li>93% and above: A</li>
               <li>90%-92%: A–</li>
               <li>87%-89%: B+</li>
@@ -233,7 +232,7 @@ export default function Syllabus() {
           </p>
 
           <h3 className="font-semibold">Turning in Work:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             Instructions on what, when, where, and how to turn in assignments
             will be posted on Canvas, email, and Discord. It is the student’s
             responsibility to understand when and how to turn in the
@@ -241,7 +240,7 @@ export default function Syllabus() {
           </p>
 
           <h3 className="font-semibold">Late Coursework:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             All assignments are due on the date as stated on canvas. Once the
             due has passed links will be closed. Late Assignments will be marked
             down 25% every day of delay.
@@ -254,7 +253,7 @@ export default function Syllabus() {
           </p>
 
           <h3 className="font-semibold">Exams:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             Exams will be closed book/closed notes. Computers/laptops and cell
             phones cannot be used during exams. Once an exam starts, students
             cannot leave and then return to the test room. Once a student leaves
@@ -264,7 +263,7 @@ export default function Syllabus() {
             time, and location of the midterms and final exam will be posted on
             Canvas.
           </p>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             Unexcused absences on the day of an exam will result in the student
             receiving a 0 on the exam. No make-up exams will be given for
             unexcused absences from the exam. If the student has a prior known
@@ -283,7 +282,7 @@ export default function Syllabus() {
           </p>
 
           <h3 className="font-semibold">Classroom Etiquette:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             Cell phones should be turned off or set to vibrate mode during
             class. If using laptops/electronic equipment to take notes, please
             use it on mute. Class participation is highly encouraged; ask
@@ -291,7 +290,7 @@ export default function Syllabus() {
           </p>
 
           <h3 className="font-semibold">Academic Honesty:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             The college experience is founded on the concepts of honesty and
             integrity. Dishonesty, cheating, plagiarism, or knowingly furnishing
             false information to the college are regarded as particularly
@@ -301,7 +300,7 @@ export default function Syllabus() {
           </p>
 
           <h3 className="font-semibold">Special Accommodations:</h3>
-          <p className="mb-5">
+          <p className="mb-5 font-dm_serif_display">
             If you are a student with a disability and believe you will need
             accommodations for this class, it is your responsibility to contact
             Student Disability Services at (619) 594-6473. To avoid any delay in

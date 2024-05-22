@@ -18,6 +18,7 @@ type CsClass = 'CS 210' | 'CS 460'
 
 const Calculator = () => {
   const [csClass, setCsClass] = useState<CsClass | undefined>(undefined)
+
   const [isGradeDialogOpen, setIsGradeDialogOpen] = useState(false)
 
   const handleDialogChange = () => {

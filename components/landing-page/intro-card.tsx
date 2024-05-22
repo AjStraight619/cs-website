@@ -17,7 +17,7 @@ type IntroCardProps = {
   name: string
   email: string
   image: string
-  position: string
+  position?: string
   portfolioLink?: string
   discordName?: string
 }

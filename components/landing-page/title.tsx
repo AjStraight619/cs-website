@@ -5,12 +5,12 @@ const Title = () => {
         Manju's Data Structures & Algorithms
       </h1>
       <p className="font-dm_serif_display text-center text-slate-600">
-        Welcome to the class knowledge hub .
+        Welcome to the knowledge hub .
       </p>
       <p className="font-dm_serif_display text-center text-slate-600 mb-10">
         {' '}
-        Everything and anything you need for my sections of CS210 and CS460 can
-        be found within this website.
+        Anything & everything you need for my sections of CS210 and CS460 can be
+        found within this website.
       </p>
     </div>
   )
