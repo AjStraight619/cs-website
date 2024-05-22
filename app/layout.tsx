@@ -1,10 +1,5 @@
 import type { Metadata } from 'next'
-import {
-  Inter,
-  Poppins,
-  Roboto_Condensed,
-  DM_Serif_Display,
-} from 'next/font/google'
+import { Inter, Poppins, Roboto_Condensed, EB_Garamond } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/providers/theme-provider'
 import { Nav } from '@/components/navigation/nav'
@@ -34,7 +29,7 @@ const robot_condensed = Roboto_Condensed({
   variable: '--font-roboto-condensed',
 })
 
-const dm_serif_display = DM_Serif_Display({
+const dm_serif_display = EB_Garamond({
   subsets: ['latin'],
   weight: ['400'],
   variable: '--font-dm-serif-display',
