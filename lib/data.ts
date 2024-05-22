@@ -19,7 +19,7 @@ export const people = [
   {
     name: 'Manju',
     position: 'Instructor',
-    image: '/headshot.svg',
+    image: '/Manju.jpeg',
     portfolioLink: '/about',
     email: 'mmuralidharanpriya@sdsu.edu',
     discordName: '@profmanjumu',
