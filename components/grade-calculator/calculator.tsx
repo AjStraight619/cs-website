@@ -28,7 +28,7 @@ const Calculator = () => {
     <Dialog open={isGradeDialogOpen} onOpenChange={setIsGradeDialogOpen}>
       <DialogTrigger
         onClick={() => setIsGradeDialogOpen(true)}
-        className="font-sans text-gray-50 opacity-50 hover:opacity-100"
+        className="font-roboto_condensed text-gray-50 opacity-50 hover:opacity-100"
       >
         Calculator
       </DialogTrigger>

@@ -23,6 +23,7 @@ const config = {
         poppins: ['var(--font-poppins)', ...fontFamily.sans],
         inter: ['var(--font-inter)', ...fontFamily.sans],
         roboto_condensed: ['var(--font-roboto-condensed)', ...fontFamily.sans],
+        dm_serif_display: ['var(--font-dm-serif-display)', ...fontFamily.serif],
       },
       colors: {
         discordPurple: '#7289da', // Base color

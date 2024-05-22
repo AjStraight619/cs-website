@@ -20,6 +20,7 @@ export const people = [
     name: 'Manju',
     position: 'Instructor',
     image: '/headshot.svg',
+    portfolioLink: '/about',
   },
   {
     name: 'Jaydeep',
@@ -44,7 +45,8 @@ export const people = [
     name: 'Halie',
     class: 'CS 210',
     position: 'TA',
-    image: '',
+    image: '/Halie.JPG',
+    portfolioLink: 'https://github.com/ayuyamo',
   },
   {
     name: 'Stanley',
@@ -62,6 +64,10 @@ export const navLinks = [
   {
     label: 'Calendar',
     href: '/calendar',
+  },
+  {
+    label: 'About Me',
+    href: '/about',
   },
 ]
 

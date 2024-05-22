@@ -29,6 +29,15 @@ const CalculatorForm210 = ({
     extraCredit: '',
   })
 
+  const [error, setError] = useState({
+    assignment: '',
+    midterm: '',
+    final: '',
+    programmingAssignments: '',
+    zybooks: '',
+    extraCredit: '',
+  })
+
   const [finalGrade, setFinalGrade] = useState<number | null>(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -47,6 +56,9 @@ const CalculatorForm210 = ({
     } = values
 
     const assignmentInt = Number(assignment)
+    if (assignmentInt > 100) {
+      setError({ ...error, assignment: 'Max assignemnt acore is100' })
+    }
     const midtermInt = Number(midterm)
     const finalInt = Number(final)
     const paInt = Number(programmingAssignments)
@@ -55,6 +67,8 @@ const CalculatorForm210 = ({
 
     const total =
       assignmentInt + midtermInt + finalInt + paInt + zybooksInt + extraCredInt
+
+    if (error) return
 
     console.log('Totals added: ', total)
     setFinalGrade(total)
@@ -79,7 +93,13 @@ const CalculatorForm210 = ({
           name="assignment"
           onChange={(e) => handleChange(e)}
         />
-
+        <>
+          {error.assignment && (
+            <p className="rounded-md p-4 bg-red-300/70 text-red-500 self-center">
+              {error.assignment}
+            </p>
+          )}
+        </>
         <Label>Midterm Score</Label>
         <Input
           placeholder="Enter total of both Midterms"

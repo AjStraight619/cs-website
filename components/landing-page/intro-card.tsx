@@ -45,11 +45,16 @@ export const IntroCard = ({
         ) : (
           <IoPersonCircleOutline className="w-24 h-24" />
         )}
-        <CardTitle>{position}</CardTitle>
-        <CardDescription>{name}</CardDescription>
+
+        <CardTitle className="font-roboto_condensed mt-5 text-lg text-discordText">
+          {name}
+        </CardTitle>
+
+        <CardDescription className="font-dm_serif_display">
+          {position}
+        </CardDescription>
       </CardHeader>
 
-      <CardContent></CardContent>
       <CardFooter>
         {portfolioLink && (
           <motion.a

@@ -10,6 +10,7 @@ import { MenuIcon } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import Calculator from '../grade-calculator/calculator'
 import IconButton from '../ui/icon-button'
+import AboutPage from '@/app/about/page'
 
 const navVariants = {
   hidden: {
@@ -71,7 +72,7 @@ export const Nav = () => {
                   <li key={index}>
                     <Link
                       href={link.href}
-                      className={`ml-6 font-sans text-gray-50 ${
+                      className={`ml-6 font-roboto_condensed text-gray-50 ${
                         pathname === link.href
                           ? 'underline opacity-100'
                           : 'opacity-50 hover:opacity-100'

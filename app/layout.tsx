@@ -1,5 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter, Poppins, Roboto_Condensed } from 'next/font/google'
+import {
+  Inter,
+  Poppins,
+  Roboto_Condensed,
+  DM_Serif_Display,
+} from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/providers/theme-provider'
 import { Nav } from '@/components/navigation/nav'
@@ -25,8 +30,14 @@ const inter = Inter({
 
 const robot_condensed = Roboto_Condensed({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
-  variable: '--font-inter',
+  weight: ['400'],
+  variable: '--font-roboto-condensed',
+})
+
+const dm_serif_display = DM_Serif_Display({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-dm-serif-display',
 })
 
 export default function RootLayout({
@@ -44,7 +55,7 @@ export default function RootLayout({
         <head />
         <body
           className={cn(
-            `${poppins.variable} ${inter.variable} ${robot_condensed.variable} flex flex-col min-h-screen bg-background antialiased`
+            `${poppins.variable} ${inter.variable} ${robot_condensed.variable} ${dm_serif_display.variable} flex flex-col min-h-screen bg-background antialiased`
           )}
         >
           <Nav />

@@ -21,7 +21,7 @@ const DiscordCards = () => {
       <motion.ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 justify-items-center">
         {discordIframes.map((option, index) => (
           <motion.li key={index}>
-            <p className="mb-1 font-poppins text-discordPurple">
+            <p className="mb-1 font-roboto_condensed text-discordPurple">
               {option.name}
             </p>
             <iframe
