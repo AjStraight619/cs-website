@@ -17,7 +17,7 @@ const discordIframes = [
 const DiscordCards = () => {
   return (
     <section className="container mb-12">
-      <h1 className="sm:leading-loose font-roboto_condensed tracking-tight text-3xl text-center text-discordText mb-10 mt-10">
+      <h1 className="sm:leading-loose font-roboto_condensed tracking-tight text-3xl text-center text-discordText mb-5 mt-10">
         Be part of the discussion
       </h1>
       <p className="font-dm_serif_display text-center text-slate-600 mb-10">
