@@ -21,24 +21,29 @@ export const people = [
     position: 'Instructor',
     image: '/headshot.svg',
     portfolioLink: '/about',
-  },
-  {
-    name: 'Jaydeep',
-    class: 'CS 210',
-    position: 'TA',
-    image: '/Jaydeep.jpg',
+    email: 'mmuralidharanpriya@sdsu.edu',
+    discordName: '@profmanjumu',
   },
   {
     name: 'Marcus',
     class: 'CS 460',
     position: 'TA',
     image: '/Marcus.jpg',
+    email: 'mchen6466@sdsu.edu',
+  },
+  {
+    name: 'Jaydeep',
+    class: 'CS 210',
+    position: 'TA',
+    image: '/Jaydeep.jpg',
+    email: 'jpustake1248@sdsu.edu',
   },
   {
     name: 'Alex',
     class: 'CS 210',
     position: 'TA',
     image: '/Alex.webp',
+    email: 'astraight9409@sdsu.edu',
     portfolioLink: 'https://alex-straight.vercel.app/',
   },
   {
@@ -46,6 +51,7 @@ export const people = [
     class: 'CS 210',
     position: 'TA',
     image: '/Halie.JPG',
+    email: 'hdo1153@sdsu.edu',
     portfolioLink: 'https://github.com/ayuyamo',
   },
   {
@@ -53,6 +59,7 @@ export const people = [
     class: 'CS 210',
     position: 'TA',
     image: '',
+    email: 'sschwarz0843@sdsu.edu',
   },
 ]
 
@@ -62,12 +69,12 @@ export const navLinks = [
     href: '/',
   },
   {
-    label: 'Calendar',
-    href: '/calendar',
-  },
-  {
     label: 'About Me',
     href: '/about',
+  },
+  {
+    label: 'Calendar',
+    href: '/calendar',
   },
 ]
 

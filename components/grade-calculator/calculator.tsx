@@ -30,7 +30,7 @@ const Calculator = () => {
         onClick={() => setIsGradeDialogOpen(true)}
         className="font-roboto_condensed text-gray-50 opacity-50 hover:opacity-100"
       >
-        Calculator
+        GradeCalc
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>

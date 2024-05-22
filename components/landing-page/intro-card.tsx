@@ -15,20 +15,23 @@ import { useState } from 'react'
 
 type IntroCardProps = {
   name: string
-  description?: string
+  email: string
   image: string
   position: string
   portfolioLink?: string
+  discordName?: string
 }
 
 export const IntroCard = ({
   name,
-  description,
   image,
+  email,
   position,
   portfolioLink,
+  discordName,
 }: IntroCardProps) => {
-  const [isHovering, setIsHovering] = useState(false)
+  const [isPortfolioHovering, setIsPortfolioHovering] = useState(false)
+  const [isDiscordHovering, setIsDiscordHovering] = useState(false)
 
   return (
     <Card className="min-w-[16rem]">
@@ -53,13 +56,16 @@ export const IntroCard = ({
         <CardDescription className="font-dm_serif_display">
           {position}
         </CardDescription>
+        <CardDescription className="font-dm_serif_display">
+          {email}
+        </CardDescription>
       </CardHeader>
 
       <CardFooter>
         {portfolioLink && (
           <motion.a
-            onMouseEnter={() => setIsHovering(true)}
-            onMouseLeave={() => setIsHovering(false)}
+            onMouseEnter={() => setIsPortfolioHovering(true)}
+            onMouseLeave={() => setIsPortfolioHovering(false)}
             className="flex flex-row items-center gap-x-2"
             animate={{}}
             initial={{}}
@@ -68,8 +74,9 @@ export const IntroCard = ({
           >
             <GlobeIcon size={20} />
             <AnimatePresence>
-              {isHovering && (
+              {isPortfolioHovering && (
                 <motion.span
+                  className="font-roboto_condensed mr-2"
                   animate={{
                     x: 0,
                     transition: {
@@ -89,7 +96,46 @@ export const IntroCard = ({
                     opacity: 0,
                   }}
                 >
-                  Portfolio
+                  See Portfolio
+                </motion.span>
+              )}
+            </AnimatePresence>
+          </motion.a>
+        )}
+        {discordName && (
+          <motion.a
+            onMouseEnter={() => setIsDiscordHovering(true)}
+            onMouseLeave={() => setIsDiscordHovering(false)}
+            className="flex flex-row items-center gap-x-2"
+            animate={{}}
+            initial={{}}
+          >
+            {' '}
+            <img src={'/discord.svg'} style={{ width: '25px' }} />
+            <AnimatePresence>
+              {isDiscordHovering && (
+                <motion.span
+                  className="font-roboto_condensed"
+                  animate={{
+                    x: 0,
+                    transition: {
+                      duration: 0.3,
+                    },
+                    opacity: 1,
+                  }}
+                  initial={{
+                    opacity: 0,
+                    x: '-50%',
+                  }}
+                  exit={{
+                    x: '-50%',
+                    transition: {
+                      duration: 0.3,
+                    },
+                    opacity: 0,
+                  }}
+                >
+                  {discordName}
                 </motion.span>
               )}
             </AnimatePresence>

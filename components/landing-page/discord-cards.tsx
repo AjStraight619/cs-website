@@ -17,13 +17,20 @@ const discordIframes = [
 const DiscordCards = () => {
   return (
     <section className="container mb-12">
-      <SectionDivider>What are we discussing this week?</SectionDivider>
+      <h1 className="sm:leading-loose font-roboto_condensed tracking-tight text-3xl text-center text-discordText mb-10 mt-10">
+        Be part of the discussion
+      </h1>
+      <p className="font-dm_serif_display text-center text-slate-600 mb-5">
+        Join the discord community, get help on homework, connect with peers and
+        catch up on announcements.
+      </p>
       <motion.ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 justify-items-center">
         {discordIframes.map((option, index) => (
           <motion.li key={index}>
-            <p className="mb-1 font-roboto_condensed text-discordPurple">
+            {' '}
+            <h2 className="mb-1 font-roboto_condensed text-discordPurple font-semibold">
               {option.name}
-            </p>
+            </h2>
             <iframe
               height="400"
               sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
