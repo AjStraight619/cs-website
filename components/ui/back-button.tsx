@@ -12,7 +12,7 @@ const BackButton = () => {
   if (pathname === '/' || pathname === '/calendar') return null
   return (
     <Button
-      className="hover:opacity-100 opacity-55 hover:underline transition-all duration-150 ml-4 fixed top-20 left-2 z-[999] "
+      className="hover:opacity-100 opacity-55 hover:underline transition-all duration-150 ml-4 fixed top-20 left-2 z-[999] bg-slate-300"
       onClick={() => back()}
       variant={null}
       size="icon"
@@ -20,7 +20,6 @@ const BackButton = () => {
       <span>
         <ChevronLeftIcon />
       </span>
-      <span>Back</span>
     </Button>
   )
 }

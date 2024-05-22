@@ -8,7 +8,7 @@ export default function Syllabus() {
   console.log(pathName, '')
   console.log(parts, '')
   return (
-    <div>
+    <div className="p-10 text-justify">
       <h1 className="text-4xl font-roboto_condensed mb-4 text-discordText">
         Syllabus (Spring '24)
       </h1>

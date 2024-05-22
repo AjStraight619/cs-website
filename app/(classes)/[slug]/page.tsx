@@ -25,11 +25,11 @@ export default async function Page({ params }: PageProps) {
   return (
     <main className="min-h-screen">
       <Title>{title}</Title>
-      <div className="mb-8">
+      <div>
         <Syllabus />
       </div>
 
-      <h1 className="text-4xl font-roboto_condensed mb-4 text-discordText">
+      <h1 className="text-4xl font-roboto_condensed text-discordText p-10">
         Topics
       </h1>
       <Suspense
