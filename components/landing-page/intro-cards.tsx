@@ -12,7 +12,7 @@ export const IntroCards = () => {
       <p className="font-dm_serif_display text-center text-slate-600 mb-20">
         My TAs are wicked sharp & amazing people who are available to guide you
         throughout the semester! You may approach any TA for the course
-        irrespection of the section you are enrolled in.
+        irrespective of the section you are enrolled in.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {people.map((person, index) => (
