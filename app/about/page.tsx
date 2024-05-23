@@ -10,7 +10,7 @@ export default function AboutPage() {
     {
       name: '3D Printing Workshops',
       description:
-        'An Outreach Program in collaboration with Miramar Ranch Elelemntary School , to bring 3D Modelling and Printing workshop to upper elementary students. The experience report will be submitted to SIGCSE 24',
+        'An Outreach Program in collaboration with Miramar Ranch Elementary School , to bring 3D Modelling and Printing workshop to upper elementary students. The experience report will be submitted to SIGCSE 24',
       teamMembers: people3D,
     },
     {
