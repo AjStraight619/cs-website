@@ -51,7 +51,7 @@ export default function AboutPage() {
           Makey-Makey. You will also find me dabbling in ceramics, practicing
           Bharathnatyam (an Indian classical dance form), building Legos or
           enjoying a smooth Flat White and sharing a sweet pastry with my
-          spirited 8 year old son, at a local some local joint around town.
+          spirited 8 year old son, at some local joint around town.
         </p>
         <Separator />
         <h1 className="text-2xl mt-8 mb-4 font-roboto_condensed text-discordText text-center">
