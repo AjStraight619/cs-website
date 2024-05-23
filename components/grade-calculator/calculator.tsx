@@ -24,11 +24,14 @@ const Calculator = () => {
   const handleDialogChange = () => {
     setIsGradeDialogOpen((prev) => !prev)
   }
-
+  const handleDialogTrigger = () => {
+    setIsGradeDialogOpen(true)
+    setCsClass(undefined)
+  }
   return (
     <Dialog open={isGradeDialogOpen} onOpenChange={setIsGradeDialogOpen}>
       <DialogTrigger
-        onClick={() => setIsGradeDialogOpen(true)}
+        onClick={() => handleDialogTrigger}
         className="font-roboto_condensed text-gray-50 opacity-50 hover:opacity-100"
       >
         GradeCalc
@@ -55,11 +58,13 @@ const Calculator = () => {
               handleDialogChange={handleDialogChange}
               csClass={csClass}
             />
-          ) : (
+          ) : csClass === 'CS 460' ? (
             <CalculatorForm460
               handleDialogChange={handleDialogChange}
               csClass={csClass}
             />
+          ) : (
+            <></>
           )}
         </AnimatePresence>
       </DialogContent>

@@ -22,8 +22,8 @@ export default function AboutPage() {
   ])
 
   return (
-    <main className="py-16 container flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-50 to-blue-200">
-      <div className="font-roboto_condensed p-10 text-justify">
+    <main className="py-16 w-full flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-50 to-blue-200">
+      <div className="font-roboto_condensed p-20 text-center container">
         <div className="flex items-center justify-center w-full p-3">
           <Image
             src="/Manju.jpeg"
@@ -58,11 +58,11 @@ export default function AboutPage() {
           Ongoing Projects
         </h1>
         {projects.map((project, index) => (
-          <section className="container p-10 rounded-lg bg-slate-700 mb-10">
-            <div
-              key={index}
-              className="mb-10 text-slate-100 font-roboto_condensed text-lg"
-            >
+          <section
+            key={index}
+            className="container p-10 rounded-lg bg-slate-700 mb-10"
+          >
+            <div className="mb-10 text-slate-100 font-roboto_condensed text-lg">
               <h3 className="text-xl font-semibold text-discordPurpleHover">
                 {project.name}
               </h3>

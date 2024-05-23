@@ -63,7 +63,7 @@ export const Nav = () => {
 
   return (
     <>
-      <nav className="fixed top-0 w-full h-16 border-b border-muted-foreground backdrop-blur-lg z-[999] font-inter bg-discordPurple">
+      <nav className="fixed top-0 w-full h-16 border-b border-muted-foreground backdrop-blur-lg z-[50] font-inter bg-discordPurple">
         <div className="md:container md:max-w-4xl flex items-center w-full h-full">
           <div className="flex items-center justify-between w-full">
             <div className="hidden sm:block">
@@ -98,16 +98,14 @@ export const Nav = () => {
               </IconButton>
             </div>
 
-            <div className="flex items-center gap-x-4 mr-2 md:mr-0">
-              <SearchDialog />
-            </div>
+            <div className="flex items-center gap-x-4 mr-2 md:mr-0"></div>
           </div>
         </div>
       </nav>
       <AnimatePresence>
         {isMenuOpen && (
           <motion.nav
-            className="h-full w-screen bg-background z-[50] fixed"
+            className="h-full w-screen z-[50] fixed bg-gradient-to-r from-blue-50 to-blue-200"
             variants={navVariants}
             initial="hidden"
             animate="show"
@@ -120,7 +118,11 @@ export const Nav = () => {
               className="h-full flex flex-col items-center justify-evenly"
             >
               {navLinks.map((link, index) => (
-                <motion.li variants={liVariants} key={index}>
+                <motion.li
+                  variants={liVariants}
+                  key={index}
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   <Link className="text-secondary-foreground" href={link.href}>
                     {link.label}
                   </Link>
