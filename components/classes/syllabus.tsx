@@ -10,7 +10,7 @@ export default function Syllabus() {
   return (
     <div className="p-10 text-justify">
       <h1 className="text-4xl font-roboto_condensed mb-4 text-discordText">
-        Syllabus (Spring '24)
+        Syllabus (Fall '24)
       </h1>
       {course === 'cs210' ? (
         <div className="font-roboto_condensed">
@@ -51,10 +51,11 @@ export default function Syllabus() {
               Sign in or create an account at{' '}
               <a href="https://learn.zybooks.com">learn.zybooks.com</a>
             </li>
-            <li>Enter zyBook code: SDSUCS210MuralidharanSpring2024</li>
+            <li>Enter zyBook code: SDSUCS210MuralidharanFall2024</li>
             <li>
-              Subscribe. A Subscription is $89 and lasts until May 2024. This is
-              also covered under Equitable Access.
+              A subscription is $89. Students may begin subscribing on Aug 12,
+              2024 and the cutoff to subscribe is Dec 04, 2024. Subscriptions
+              will last until Jan 01, 2025.
             </li>
           </ul>
 
@@ -70,7 +71,7 @@ export default function Syllabus() {
           <h3 className="font-semibold">Grading:</h3>
 
           <ul className="mb-5 font-dm_serif_display">
-            <li>Weekly Assignments (100 Points total worth 10%)</li>
+            <li>Written Assignments (100 Points total worth 10%)</li>
             <li>ZyBooks Participation (5%)</li>
             <li>3 Programming assignments (10% each)</li>
             <li>2 Midterms (15% + 15%)</li>
@@ -84,8 +85,8 @@ export default function Syllabus() {
             <li>83%-86%: B</li>
             <li>80%-82%: B–</li>
             <li>77%-79%: C+</li>
-            <li>73%-76%: C</li>
-            <li>70%-72%: C–</li>
+            <li>72%-76%: C</li>
+            <li>70%-71%: C–</li>
             <li>67%-69%: D+</li>
             <li>63%-66%: D</li>
             <li>60%-62%: D–</li>
@@ -185,6 +186,20 @@ export default function Syllabus() {
             <strong>Prerequisite(s):</strong> CS 210 and MATH 245.
           </p>
 
+          <h3 className="font-semibold">Class Flow:</h3>
+          <p className="mb-5 font-dm_serif_display">
+            This class does not have traditional testing. All exams and
+            assignments are APA7 style Student research papers. Analyzing
+            Algorithms and writing proof is an art which cannot be tested by
+            memorization of facts. Writing a paper on specific topics, improves
+            research skills and technical writing skills, both of which are
+            invaluable in academia and the industry.
+            <strong>
+              Students must be prepared to dedicate time for writing in-depth
+              quality papers.
+            </strong>
+          </p>
+
           <h3 className="font-semibold">Goals for this Course:</h3>
           <p className="mb-5 font-dm_serif_display">
             Upon completion of this course students will be able to:
@@ -192,6 +207,7 @@ export default function Syllabus() {
           <ul className="mb-5 font-dm_serif_display">
             <li>Analyze and measure complexities of algorithms</li>
             <li>Write Proof of optimality and completeness of algorithms</li>
+            <li>Author APA7 style student papers</li>
           </ul>
 
           <h3 className="font-semibold">Textbook:</h3>
