@@ -43,7 +43,7 @@ export default function AboutPage() {
         </h1>
         <p className="mb-10 text-slate-600 font-dm_serif_display text-lg">
           On Campus, you'll find me in GMCS 564. I'm the faculty advisor for
-          Aztec Robotics, Girls Who Code & App Development Club (coming soon).
+          Aztec Robotics, Girls Who Code & App Development Club.
         </p>
         <p className="mb-10 text-slate-600 font-dm_serif_display text-lg">
           Off campus, I conduct STEAM workshops for Sally Ride Science (UCSD),

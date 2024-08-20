@@ -20,6 +20,7 @@ type IntroCardProps = {
   position?: string
   portfolioLink?: string
   discordName?: string
+  officeHours?: string
 }
 
 export const IntroCard = ({
@@ -29,6 +30,7 @@ export const IntroCard = ({
   position,
   portfolioLink,
   discordName,
+  officeHours,
 }: IntroCardProps) => {
   const [isPortfolioHovering, setIsPortfolioHovering] = useState(false)
   const [isDiscordHovering, setIsDiscordHovering] = useState(false)
@@ -96,7 +98,7 @@ export const IntroCard = ({
                     opacity: 0,
                   }}
                 >
-                  See Portfolio
+                  Portfolio
                 </motion.span>
               )}
             </AnimatePresence>

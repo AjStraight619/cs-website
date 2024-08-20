@@ -23,6 +23,7 @@ export const people = [
     portfolioLink: '/about',
     email: 'mmuralidharanpriya@sdsu.edu',
     discordName: '@profmanjumu',
+    officeHours: 'M: 11-1PM , Th: 3:30-5PM',
   },
   {
     name: 'Marcus',
@@ -56,11 +57,12 @@ export const people = [
     portfolioLink: 'https://github.com/ayuyamo',
   },
   {
-    name: 'Stanley',
+    name: 'Apeksha',
     class: 'CS 210',
     position: 'TA',
     image: '',
-    email: 'sschwarz0843@sdsu.edu',
+    email: 'ajadhav7472@sdsu.edu',
+    portfolioLink: 'https://apekshajadhav.vercel.app/',
   },
 ]
 export const people3D = [
