@@ -31,6 +31,7 @@ export const people = [
     position: 'TA',
     image: '/Marcus.jpg',
     email: 'mchen6466@sdsu.edu',
+    portfolioLink: 'https://github.com/marcuschen001',
   },
   {
     name: 'Jaydeep',
