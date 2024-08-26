@@ -214,7 +214,7 @@ export default function Syllabus() {
         <div className="font-roboto_condensed">
           <h3 className="font-semibold">Class Times:</h3>
           <p className="mb-5 font-dm_serif_display">
-            Tuesday & Thursday 2:00 - 3:15PM CS460 @GMCS314
+            Tuesday & Thursday 2:00 - 3:15PM CS460 @LH347
           </p>
           <h3 className="font-semibold">Important Dates:</h3>
 
